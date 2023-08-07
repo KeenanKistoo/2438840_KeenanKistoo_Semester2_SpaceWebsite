@@ -1,4 +1,17 @@
-.head-test {
-  font-size: 5rem;
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Manrope:wght@400;500&family=Merriweather:ital,wght@0,300;0,700;1,400&family=Oswald:wght@200&display=swap");
+
+body.home-body {
+  background-image: url("/images/astro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1.main-head {
+  display: block;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: auto;
 }
