@@ -15,3 +15,46 @@ h1.main-head {
   text-align: center;
   margin-top: auto;
 }
+
+section.nav-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 1;
+  height: 4rem;
+  width: 80vw;
+  margin: auto;
+}
+
+button.nav-btn {
+  width: 15rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 550;
+  border-radius: 0;
+}
+button.nav-btn:hover {
+  background-color: black;
+  color: white;
+  border: 0.2rem white solid;
+  cursor: pointer;
+}
+
+section.tooltip-home {
+  width: 80vw;
+  height: 4rem;
+  background-color: black;
+  margin-left: 10rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  transform: translate(-10000%);
+}
+
+section.tooltip-home-show {
+  width: 75.5vw;
+  height: 4rem;
+  background-color: white;
+  margin-left: 12.5rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  transform: translate(0);
+}
