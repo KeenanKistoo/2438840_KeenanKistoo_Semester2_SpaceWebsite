@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Manrope:wght@400;500&family=Merriweather:ital,wght@0,300;0,700;1,400&family=Oswald:wght@200&display=swap");
 
+/*Homepage Styles*/
 body.home-body {
   background-image: url("../images/astro.jpg");
   background-size: cover;
@@ -59,6 +60,61 @@ section.tooltip-home-show {
   transform: translate(0);
 }
 
-h1.test {
-  color: red;
+/*Pages Styles*/
+h1.main-head-pages {
+  display: block;
+  color: black;
+  font-family: "Manrope", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: auto;
+}
+section.nav-tabs-pages {
+  display: grid;
+  grid-template-columns: repeat(6, 16.5%);
+  grid-template-rows: 1;
+  height: 4rem;
+  width: 80vw;
+  margin: -1.5rem auto auto auto;
+}
+button.nav-btn {
+  width: 15rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 550;
+  border-radius: 0;
+  background-color: rgb(238, 237, 237);
+}
+button.nav-btn:hover {
+  background-color: black;
+  color: white;
+  border: 0.2rem white solid;
+  cursor: pointer;
+}
+div.divider-line {
+  border: 1px black solid;
+  margin: 1.5rem auto auto auto;
+  width: 100%;
+}
+
+main.main-style {
+  background-color: rgb(238, 237, 237);
+  height: 100vh;
+  width: 100%;
+}
+
+button.active {
+  background-color: black;
+  color: white;
+  border: 0.2rem white solid;
+}
+
+section.tooltip-pages {
+  width: 75.5vw;
+  height: 4rem;
+  background-color: rgb(238, 237, 237);
+  margin-left: 13rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  border: 1px black solid;
 }
