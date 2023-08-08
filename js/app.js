@@ -22,8 +22,29 @@ navBtns.forEach((navBtn) => {
   });
 });
 
+//Homepage Navigation:
 let blogBtn = document.querySelector("#blog-btn");
 
 blogBtn.addEventListener("click", () => {
   window.location.href = "html/blog.html";
+});
+let marsBtn = document.querySelector("#mars-btn");
+
+marsBtn.addEventListener("click", () => {
+  window.location.href = "html/mars.html";
+});
+let picBtn = document.querySelector("#pic-btn");
+
+picBtn.addEventListener("click", () => {
+  window.location.href = "html/daily-img.html";
+});
+let designBtn = document.querySelector("#design-btn");
+
+designBtn.addEventListener("click", () => {
+  window.location.href = "html/design.html";
+});
+let keplerBtn = document.querySelector("#kepler-btn");
+
+keplerBtn.addEventListener("click", () => {
+  window.location.href = "html/kepler-field.html";
 });
