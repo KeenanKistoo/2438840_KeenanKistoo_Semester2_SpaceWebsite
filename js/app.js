@@ -25,5 +25,5 @@ navBtns.forEach((navBtn) => {
 let blogBtn = document.querySelector("#blog-btn");
 
 blogBtn.addEventListener("click", () => {
-  window.location.href = "../html/blog.html";
+  window.location.href = "html/blog.html";
 });
