@@ -25,3 +25,30 @@ const homeTooltips = [
     tooltipText: "DS",
   },
 ];
+
+const tabDetails = [
+  {
+    title: "Homepage",
+    classOne: "",
+  },
+  {
+    title: "Mars",
+    classOne: "",
+  },
+  {
+    title: "Visual Marvel",
+    classOne: "",
+  },
+  {
+    title: "Kepler Field",
+    classOne: "",
+  },
+  {
+    title: "Blog Section",
+    classOne: "",
+  },
+  {
+    title: "Design Section",
+    classOne: "",
+  },
+];

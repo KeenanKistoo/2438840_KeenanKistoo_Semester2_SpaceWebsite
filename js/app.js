@@ -22,6 +22,24 @@ navBtns.forEach((navBtn) => {
   });
 });
 
+//Generate the navigation bar:
+let header = document.querySelector(".header");
+function SetNavBar(count) {
+  header.innerHTML = `<section class="head-sect">
+  <h1 class="main-head-pages">${tabDetails[count].title}</h1>
+</section>
+<section class="nav-tabs-pages">
+  <button class="nav-btn-pages">Homepage</button>
+  <button class="nav-btn-pages">Mars</button>
+  <button class="nav-btn-pages">Visual Marvel</button>
+  <button class="nav-btn-pages">Kepler Field</button>
+  <button class="nav-btn-pages active">Blog Section</button>
+  <button class="nav-btn-pages">Design Section</button>
+</section>
+<section class="tooltip-pages"></section>
+<div class="divider-line"></div>`;
+}
+
 //Homepage Navigation:
 let blogBtn = document.querySelector("#blog-btn");
 
@@ -48,3 +66,7 @@ let keplerBtn = document.querySelector("#kepler-btn");
 keplerBtn.addEventListener("click", () => {
   window.location.href = "html/kepler-field.html";
 });
+
+function TestJS() {
+  alert("this script is working");
+}
