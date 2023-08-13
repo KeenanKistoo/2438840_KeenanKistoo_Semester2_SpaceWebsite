@@ -83,12 +83,12 @@ button.nav-btn-pages {
   font-size: 1.2rem;
   font-weight: 550;
   border-radius: 0;
-  background-color: rgb(238, 237, 237);
+  background-color: white;
 }
 button.nav-btn-pages:hover {
-  background-color: black;
+  background-color: rgb(69, 69, 69);
   color: white;
-  border: 0.2rem white solid;
+  border: 0.1rem rgb(32, 32, 32) solid;
   cursor: pointer;
 }
 div.divider-line {
@@ -111,7 +111,7 @@ button.active {
 section.tooltip-pages {
   width: 75.5vw;
   height: 4rem;
-  background-color: rgb(238, 237, 237);
+  background-color: white;
   margin-left: 13rem;
   margin-right: auto;
   margin-top: 1rem;
