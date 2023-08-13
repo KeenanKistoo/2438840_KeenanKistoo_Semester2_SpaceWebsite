@@ -1,27 +1,5 @@
 console.log(d3);
 
-//Homepage Button Hover:
-let navBtns = document.querySelectorAll(".nav-btn");
-let tooltipHome = document.querySelector(".tooltip-home");
-
-navBtns.forEach((navBtn) => {
-  navBtn.addEventListener("mouseover", () => {
-    tooltipHome.className = "tooltip-home-show";
-    for (i = 0; i < homeTooltips.length; i++) {
-      if (navBtn.innerHTML === homeTooltips[i].heading) {
-        tooltipHome.innerHTML = homeTooltips[i].tooltipText;
-      }
-    }
-  });
-});
-
-navBtns.forEach((navBtn) => {
-  navBtn.addEventListener("mouseleave", () => {
-    tooltipHome.className = "tooltip-home";
-    tooltipHome.innerHTML = "";
-  });
-});
-
 //Generate the navigation bar:
 let header = document.querySelector(".header");
 function SetNavBar(count) {
@@ -33,40 +11,45 @@ function SetNavBar(count) {
   <button class="nav-btn-pages">Mars</button>
   <button class="nav-btn-pages">Visual Marvel</button>
   <button class="nav-btn-pages">Kepler Field</button>
-  <button class="nav-btn-pages active">Blog Section</button>
+  <button class="nav-btn-pages" id="test-id">Blog Section</button>
   <button class="nav-btn-pages">Design Section</button>
 </section>
 <section class="tooltip-pages"></section>
 <div class="divider-line"></div>`;
 }
 
-//Homepage Navigation:
-let blogBtn = document.querySelector("#blog-btn");
-
-blogBtn.addEventListener("click", () => {
-  window.location.href = "html/blog.html";
-});
-let marsBtn = document.querySelector("#mars-btn");
-
-marsBtn.addEventListener("click", () => {
-  window.location.href = "html/mars.html";
-});
-let picBtn = document.querySelector("#pic-btn");
-
-picBtn.addEventListener("click", () => {
-  window.location.href = "html/daily-img.html";
-});
-let designBtn = document.querySelector("#design-btn");
-
-designBtn.addEventListener("click", () => {
-  window.location.href = "html/design.html";
-});
-let keplerBtn = document.querySelector("#kepler-btn");
-
-keplerBtn.addEventListener("click", () => {
-  window.location.href = "html/kepler-field.html";
-});
-
 function TestJS() {
   alert("this script is working");
 }
+
+let blogBtnPages = document.querySelector(".blog-btn-pages");
+
+blogBtnPages.addEventListener("click", () => {
+  window.location.href = "../html/blog.html";
+});
+
+let homeBtnPages = document.querySelector(".home-btn-pages");
+
+homeBtnPages.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+let marsBtnPages = document.querySelector(".mars-btn-pages");
+
+marsBtnPages.addEventListener("click", () => {
+  window.location.href = "../html/mars.html";
+});
+let picBtnPages = document.querySelector(".pic-btn-pages");
+
+picBtnPages.addEventListener("click", () => {
+  window.location.href = "../html/daily-img.html";
+});
+let designBtnPages = document.querySelector(".design-btn-pages");
+
+designBtnPages.addEventListener("click", () => {
+  window.location.href = "../html/design.html";
+});
+let keplerBtnPages = document.querySelector(".kepler-btn-pages");
+
+keplerBtnPages.addEventListener("click", () => {
+  window.location.href = "../html/kepler-field.html";
+});
