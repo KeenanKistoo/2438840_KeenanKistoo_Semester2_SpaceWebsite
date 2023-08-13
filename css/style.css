@@ -65,22 +65,22 @@ h1.main-head-pages {
   display: block;
   color: black;
   font-family: "Manrope", sans-serif;
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-align: center;
-  margin-top: auto;
+  margin-top: -1rem;
 }
 section.nav-tabs-pages {
   display: grid;
   grid-template-columns: repeat(6, 16.5%);
   grid-template-rows: 1;
   height: 4rem;
-  width: 80vw;
-  margin: -1.5rem auto auto auto;
+  width: 90vw;
+  margin: -2.42rem auto auto auto;
 }
 button.nav-btn-pages {
-  width: 15rem;
+  width: 12rem;
   font-family: "Manrope", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 550;
   border-radius: 0;
   background-color: rgb(238, 237, 237);
@@ -98,7 +98,6 @@ div.divider-line {
 }
 
 main.main-style {
-  background-color: rgb(238, 237, 237);
   height: 100vh;
   width: 100%;
 }
@@ -117,4 +116,26 @@ section.tooltip-pages {
   margin-right: auto;
   margin-top: 1rem;
   border: 1px black solid;
+}
+main.main-style {
+  margin-top: -1.2rem;
+}
+section.design-para {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+h2.design-head {
+  font-size: 1.7rem;
+}
+
+p.design-txt {
+  font-size: 1.1rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+img.planet-div-line {
+  width: 20rem;
 }
