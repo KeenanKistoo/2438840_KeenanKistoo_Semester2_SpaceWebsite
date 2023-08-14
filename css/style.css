@@ -42,7 +42,7 @@ button.nav-btn:hover {
 
 section.tooltip-home {
   width: 80vw;
-  height: 4rem;
+  height: 2.8rem;
   background-color: black;
   margin-left: 10rem;
   margin-right: auto;
@@ -51,12 +51,17 @@ section.tooltip-home {
 }
 
 section.tooltip-home-show {
+  display: block;
+  text-align: center;
   width: 75.5vw;
-  height: 4rem;
+  height: 2.8rem;
   background-color: white;
+  font-family: "Manrope", sans-serif;
   margin-left: 12.5rem;
   margin-right: auto;
   margin-top: 1rem;
+  color: black;
+  font-size: 1.3rem;
   transform: translate(0);
 }
 
