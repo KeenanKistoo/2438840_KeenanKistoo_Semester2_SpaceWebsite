@@ -155,6 +155,13 @@ img.planet-div-line {
   width: 20rem;
 }
 
+img.wireframe {
+  height: 24rem;
+  width: 40rem;
+  margin-bottom: auto;
+  border: 0.15rem black solid;
+}
+
 /*Blog Section Elements*/
 section.blog-visual {
   display: grid;
