@@ -115,12 +115,18 @@ button.active {
 
 section.tooltip-pages {
   width: 75.5vw;
-  height: 4rem;
+  height: 2.5rem;
   background-color: white;
   margin-left: 13rem;
   margin-right: auto;
   margin-top: 1rem;
   border: 1px black solid;
+  transform: translate(0);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+section.tooltip-pages-show {
+  transform: translate(-10000%);
 }
 main.main-style {
   margin-top: -1.2rem;
@@ -133,6 +139,10 @@ section.design-para {
 
 h2.design-head {
   font-size: 1.7rem;
+}
+
+h2#data-head {
+  font-size: 1.8rem;
 }
 
 p.design-txt {
