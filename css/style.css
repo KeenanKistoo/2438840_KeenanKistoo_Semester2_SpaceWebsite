@@ -203,3 +203,42 @@ h2.blog-acc-bar {
   text-align: center;
   font-size: 1.9rem;
 }
+
+#blog-one {
+  margin-top: 1rem;
+}
+
+section.blog-post {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+h3.blog-post-head {
+  font-size: 1.7rem;
+}
+
+p.blog-txt {
+  font-size: 1.1rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+h4.sub-head-blog {
+  margin-top: auto;
+  font-size: 1.5rem;
+}
+
+#blog-two {
+  padding-bottom: 5rem;
+}
+
+.world-spin {
+  grid-row: 1;
+  grid-column: 2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}

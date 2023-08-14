@@ -53,3 +53,18 @@ let keplerBtnPages = document.querySelector(".kepler-btn-pages");
 keplerBtnPages.addEventListener("click", () => {
   window.location.href = "../html/kepler-field.html";
 });
+
+//Blog Page Elements:
+let heading = document.querySelector("h1");
+
+if (heading.innerHTML === "Blog Section") {
+  let blogBtnOne = document.querySelector("#blog-btn-one");
+  blogBtnOne.addEventListener("click", () => {
+    window.location.href = "#blog-one";
+  });
+
+  let blogBtnTwo = document.querySelector("#blog-btn-two");
+  blogBtnTwo.addEventListener("click", () => {
+    window.location.href = "#blog-two";
+  });
+}
