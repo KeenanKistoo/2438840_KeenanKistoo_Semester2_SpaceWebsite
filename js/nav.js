@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let design = document.querySelector(".design-btn-pages");
 
   design.addEventListener("click", () => {
-    window.location.href = "../html/blog.html";
+    window.location.href = "../html/design.html";
   });
 });
