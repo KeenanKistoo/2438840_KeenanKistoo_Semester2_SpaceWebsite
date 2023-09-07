@@ -1,9 +1,21 @@
+//Navigation Elements:
+
+names = [
+  "Blog Section",
+  "Picture of the Day",
+  "Design Section",
+  "Kepler Field",
+  "Mars",
+];
+
 //Navigation Bar:
 
 let headingNav = document.querySelector(".header");
+var num = headingNav.id;
+
 document.addEventListener("DOMContentLoaded", () => {
   headingNav.innerHTML = `<section class="head-sect">
-    <h1 class="main-head-pages">Blog Section</h1>
+    <h1 class="main-head-pages">${names[num]}</h1>
   </section>
   <section class="nav-tabs-pages">
     <button class="nav-btn-pages home-btn-pages"">Homepage</button>
