@@ -2,7 +2,7 @@
 
 names = [
   "Blog Section",
-  "Picture of the Day",
+  "Visual Marvel",
   "Design Section",
   "Kepler Field",
   "Mars",
@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <section class="nav-tabs-pages">
     <button class="nav-btn-pages home-btn-pages"">Homepage</button>
     <button class="nav-btn-pages mars-btn-pages">Mars</button>
-    <button class="nav-btn-pages active pic-btn-pages">
-      Visual Marvel
-    </button>
+    <button class="nav-btn-pages pic-btn-pages">Visual Marvel</button>
     <button class="nav-btn-pages kepler-btn-pages">Kepler Field</button>
     <button class="nav-btn-pages blog-btn-pages">Blog Section</button>
     <button class="nav-btn-pages design-btn-pages">Design Section</button>
@@ -66,4 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
   design.addEventListener("click", () => {
     window.location.href = "../html/design.html";
   });
+});
+
+//Navigation CSS for Active Page:
+
+document.addEventListener("DOMContentLoaded", () => {
+  let mainHead = document.querySelector("h1");
+  let navBtnsCheck = document.querySelectorAll(".nav-btn-pages");
+
+  for (i = 0; i < navBtnsCheck.length; i++) {
+    if (mainHead.innerText === navBtnsCheck[i].innerHTML) {
+      navBtnsCheck[i].classList.add("active");
+    }
+  }
 });
