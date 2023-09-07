@@ -3,7 +3,7 @@
 let headingNav = document.querySelector(".header");
 document.addEventListener("DOMContentLoaded", () => {
   headingNav.innerHTML = `<section class="head-sect">
-    <h1 class="main-head-pages">Picture Of The Day</h1>
+    <h1 class="main-head-pages">Blog Section</h1>
   </section>
   <section class="nav-tabs-pages">
     <button class="nav-btn-pages home-btn-pages"">Homepage</button>
@@ -24,5 +24,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   home.addEventListener("click", () => {
     window.location.href = "../index.html";
+  });
+  let ast = document.querySelector(".mars-btn-pages");
+
+  ast.addEventListener("click", () => {
+    window.location.href = "../html/mars.html";
+  });
+
+  let picBtn = document.querySelector(".pic-btn-pages");
+
+  picBtn.addEventListener("click", () => {
+    window.location.href = "../html/daily-img.html";
+  });
+
+  let kep = document.querySelector(".kepler-btn-pages");
+
+  kep.addEventListener("click", () => {
+    window.location.href = "../html/kepler-field.html";
+  });
+
+  let blog = document.querySelector(".blog-btn-pages");
+
+  blog.addEventListener("click", () => {
+    window.location.href = "../html/blog.html";
+  });
+
+  let design = document.querySelector(".design-btn-pages");
+
+  design.addEventListener("click", () => {
+    window.location.href = "../html/blog.html";
   });
 });
