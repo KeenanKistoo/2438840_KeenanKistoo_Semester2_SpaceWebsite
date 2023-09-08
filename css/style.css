@@ -38,6 +38,7 @@ button.nav-btn:hover {
   color: white;
   border: 0.2rem white solid;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 section.tooltip-home {
@@ -47,7 +48,8 @@ section.tooltip-home {
   margin-left: 10rem;
   margin-right: auto;
   margin-top: 1rem;
-  transform: translate(-10000%);
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
 }
 
 section.tooltip-home-show {
@@ -62,7 +64,8 @@ section.tooltip-home-show {
   margin-top: 1rem;
   color: black;
   font-size: 1.3rem;
-  transform: translate(0);
+  transform: translateX(0);
+  transition: all 0.5s ease;
 }
 
 /*Pages Styles*/
@@ -95,6 +98,7 @@ button.nav-btn-pages:hover {
   color: white;
   border: 0.1rem rgb(32, 32, 32) solid;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
 div.divider-line {
   border: 1px black solid;

@@ -31,14 +31,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   let home = document.querySelector(".home-btn-pages");
+  let tooltip = document.querySelector(".tooltip-pages-show");
 
   home.addEventListener("click", () => {
     window.location.href = "../index.html";
+  });
+
+  home.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  home.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
   });
   let ast = document.querySelector(".mars-btn-pages");
 
   ast.addEventListener("click", () => {
     window.location.href = "../html/mars.html";
+  });
+
+  ast.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  ast.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
   });
 
   let picBtn = document.querySelector(".pic-btn-pages");
@@ -47,10 +64,25 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "../html/daily-img.html";
   });
 
+  picBtn.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  picBtn.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
+  });
+
   let kep = document.querySelector(".kepler-btn-pages");
 
   kep.addEventListener("click", () => {
     window.location.href = "../html/kepler-field.html";
+  });
+  kep.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  kep.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
   });
 
   let blog = document.querySelector(".blog-btn-pages");
@@ -58,11 +90,25 @@ document.addEventListener("DOMContentLoaded", () => {
   blog.addEventListener("click", () => {
     window.location.href = "../html/blog.html";
   });
+  blog.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  blog.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
+  });
 
   let design = document.querySelector(".design-btn-pages");
 
   design.addEventListener("click", () => {
     window.location.href = "../html/design.html";
+  });
+  design.addEventListener("mouseover", () => {
+    tooltip.className = "tooltip-pages";
+  });
+
+  design.addEventListener("mouseout", () => {
+    tooltip.className = "tooltip-pages-show";
   });
 });
 
