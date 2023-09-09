@@ -272,3 +272,9 @@ h4.sub-head-blog {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+/*Buttons for Data Visualisation*/
+button.vis-btn {
+  height: 5rem;
+  width: 5rem;
+}
