@@ -47,7 +47,7 @@ d3.json(metUrl).then((data) => {
   }
 
   let xScale = d3.scaleLinear().domain([0, xMax]).range([0, WIDTH]);
-  let yScale = d3.scaleLinear().domain([30, yMax]).range([HEIGHT, 0]);
+  let yScale = d3.scaleLinear().domain([0, yMax]).range([HEIGHT, 0]);
   let rScale = d3.scaleSqrt().domain([150000, 1300000000]).range([2, 50]);
 
   function createXAxis() {
