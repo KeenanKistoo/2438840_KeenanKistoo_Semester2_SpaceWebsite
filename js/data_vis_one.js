@@ -21,13 +21,15 @@ const today = new Date();
 const day = today.getDate() - 1;
 const month = today.getMonth() + 1;
 const year = today.getFullYear();
+
 const formattedDate = `${year}-0${month}-0${day}`;
+
 console.log(`Today's date is ${formattedDate}`);
 
 //Determine max and min scales and creating the axes:
 
 d3.json(metUrl).then((data) => {
-  let neo = data.near_earth_objects[formattedDate];
+  let neo = data.near_earth_objects["2023-09-08"];
   console.log(neo);
   console.log(neo[0]);
 
@@ -48,7 +50,7 @@ d3.json(metUrl).then((data) => {
 
   let xScale = d3.scaleLinear().domain([0, xMax]).range([0, WIDTH]);
   let yScale = d3.scaleLinear().domain([0, yMax]).range([HEIGHT, 0]);
-  let rScale = d3.scaleSqrt().domain([150000, 1300000000]).range([2, 50]);
+  let rScale = d3.scaleSqrt().domain([0, 30]).range([2, 50]);
 
   function createXAxis() {
     svg
@@ -62,7 +64,7 @@ d3.json(metUrl).then((data) => {
           .attr("y", MARGIN.bottom - 15)
           .style("fill", "#000")
           .style("font-size", "13px")
-          .text("X Heading");
+          .text("Miss Distance");
       });
   }
 
@@ -78,17 +80,34 @@ d3.json(metUrl).then((data) => {
           .attr("transform", "rotate(-90)")
           .style("fill", "#000")
           .style("font-size", "13px")
-          .text("Y Heading");
+          .text("Absolute Magnitude");
       });
   }
   createXAxis();
   createYAxis();
+
+  function CreateBubbles(data) {
+    svg
+      .append("g")
+      .selectAll(".bubbles")
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("class", (d) => {
+        "bubbles " + d.is_potentially_hazardous_asteroid;
+      })
+      .attr("cx", (d) =>
+        xScale(d.close_approach_data[0].miss_distance.kilometers)
+      )
+      .attr("cy", (d) => yScale(d.absolute_magnitude_h))
+      .attr("r", (d) => rScale(d.absolute_magnitude_h))
+      .style("fill", "#000")
+      .style("stroke-width", "1px")
+      .style("opacity", 0.7);
+    console.log(data);
+  }
+
+  const myData = data.near_earth_objects["2023-09-07"];
+  CreateBubbles(myData);
 });
 //create tooltip
-
-//create bubbles
-
-//create legend
-
-//implement:
-d3.json(metUrl).then((data) => {});
