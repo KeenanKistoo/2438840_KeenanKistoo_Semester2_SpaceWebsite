@@ -23,7 +23,12 @@ d3.json(techUrl).then((data) => {
     ])
     .enter()
     .append("th")
-    .text((d) => d);
+    .text((d) => d)
+    .style("border", "1px black solid")
+    .style("background-color", "lightgray")
+    .style("font-weight", "bold")
+    .style("text-transform", "uppercase")
+    .style("padding", "3px");
 
   const tbody = table.append("tbody");
   const rows = tbody.selectAll("tr").data(data).enter().append("tr");
@@ -39,5 +44,8 @@ d3.json(techUrl).then((data) => {
     ])
     .enter()
     .append("td")
-    .text((d) => d);
+    .text((d) => d)
+    .style("border", "1px black solid")
+    .style("padding", "10px")
+    .style("text-align", "center");
 });

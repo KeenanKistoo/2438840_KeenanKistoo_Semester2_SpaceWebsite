@@ -278,3 +278,8 @@ button.vis-btn {
   height: 5rem;
   width: 5rem;
 }
+#table-container {
+  font-family: "Manrope", sans-serif;
+  margin-left: 30.5%;
+  margin-right: 30.5%;
+}
