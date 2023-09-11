@@ -398,6 +398,10 @@ a.foot-links {
   padding-bottom: 15rem;
 }
 
+#table-img {
+  height: 12rem;
+}
+
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;
