@@ -86,3 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+//Navigation Scroll
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("scroll", () => {
+    let mainHead = document.querySelector(".main-head-pages");
+    let navTabScroll = document.querySelector(".nav-tabs-pages");
+    let navBtnScroll = document.querySelectorAll(".nav-btn-pages");
+    let divLine = document.querySelector(".divider-line");
+
+    mainHead.classList.toggle("head-scroll", window.scrollY > 0);
+    navTabScroll.classList.toggle("page-scroll", window.scrollY > 0);
+    divLine.classList.toggle("div-scroll", window.scrollY > 0);
+    navBtnScroll.forEach((btn) => {
+      btn.classList.toggle("btn-scroll", window.scrollY > 0);
+    });
+  });
+});
