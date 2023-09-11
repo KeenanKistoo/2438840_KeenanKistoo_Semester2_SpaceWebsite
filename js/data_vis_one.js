@@ -3,8 +3,8 @@ let metUrl =
 let apiKey = "imb3uQNJIXqz8tyBuMd7uSf4lgkqVrULlw2s6GCH";
 
 //Create Dimensions
-let HEIGHT = 500;
-let WIDTH = 800;
+let HEIGHT = 700;
+let WIDTH = 1000;
 let MARGIN = { top: 50, right: 500, bottom: 50, left: 500 };
 
 //Create SVG
@@ -49,7 +49,10 @@ d3.json(metUrl).then((data) => {
   }
 
   let xScale = d3.scaleLinear().domain([0, xMax]).range([0, WIDTH]);
-  let yScale = d3.scaleLinear().domain([0, yMax]).range([HEIGHT, 0]);
+  let yScale = d3
+    .scaleLinear()
+    .domain([0, yMax + 5])
+    .range([HEIGHT, 0]);
   let rScale = d3.scaleSqrt().domain([0, 30]).range([2, 50]);
 
   function createXAxis() {
@@ -63,8 +66,9 @@ d3.json(metUrl).then((data) => {
           .attr("x", WIDTH / 2)
           .attr("y", MARGIN.bottom - 15)
           .style("fill", "#000")
-          .style("font-size", "13px")
-          .text("Miss Distance");
+          .style("font-size", "1.5rem")
+          .style("padding", "1rem")
+          .text("Miss Distance (km)");
       });
   }
 
@@ -79,7 +83,7 @@ d3.json(metUrl).then((data) => {
           .attr("y", -40)
           .attr("transform", "rotate(-90)")
           .style("fill", "#000")
-          .style("font-size", "13px")
+          .style("font-size", "1.5rem")
           .text("Absolute Magnitude");
       });
   }

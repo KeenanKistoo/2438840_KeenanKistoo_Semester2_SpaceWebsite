@@ -100,7 +100,10 @@ section.nav-tabs-pages {
   grid-template-rows: 1;
   height: 4rem;
   width: 90vw;
-  margin: -2.42rem auto auto auto;
+  margin-top: -2.42rem;
+  margin-bottom: auto;
+  margin-left: 15rem;
+  margin-right: -4rem;
   transition: 0.3s;
 }
 section.page-scroll {
@@ -188,6 +191,8 @@ section.design-para {
   display: block;
   font-family: "Manrope", sans-serif;
   text-align: center;
+  margin-left: 25rem;
+  margin-right: 25rem;
 }
 
 h2.design-head {
@@ -291,12 +296,25 @@ section.blog-post {
   display: block;
   font-family: "Manrope", sans-serif;
   text-align: center;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  font-size: 1.2rem;
 }
 
 h3.blog-post-head {
   font-size: 1.7rem;
 }
 
+p.blog-txt {
+  font-size: 25rem;
+  margin-left: 45rem;
+  margin-right: 45rem;
+}
+p.info-txt {
+  font-size: 1.1rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
 p.blog-txt {
   font-size: 1.1rem;
   margin-left: 1.2rem;
@@ -331,4 +349,35 @@ button.vis-btn {
   font-family: "Manrope", sans-serif;
   margin-left: 30.5%;
   margin-right: 30.5%;
+}
+
+.graph {
+  margin-left: 25rem;
+  font-family: "Manrope", sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
+}
+
+.footer-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+a.foot-links {
+  color: white;
+  padding: 5rem;
 }
