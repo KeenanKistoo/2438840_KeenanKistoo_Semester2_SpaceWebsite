@@ -104,3 +104,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//Footer elements:
+document.addEventListener("DOMContentLoaded", () => {
+  let footer = document.querySelector(".footer");
+  footer.innerHTML = `<section class="footer-elements">
+  <ul>
+    <a href="../index.html" class="foot-links">Homepage</a
+    ><a href="../html/mars.html" class="foot-links">Asteroids</a
+    ><a href="../html/daily-img.html" class="foot-links">Visual Marvel</a
+    ><a href="../html/kepler-field.html" class="foot-links"
+      >Solar Flares</a
+    ><a href="../html/blog.html" class="foot-links">Blog Section</a
+    ><a href="../html//design.html" class="foot-links"
+      >Design
+      <section></section
+    ></a>
+  </ul>
+</section>`;
+});
