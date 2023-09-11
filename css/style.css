@@ -397,3 +397,46 @@ a.foot-links {
 #meteor {
   padding-bottom: 15rem;
 }
+
+@media (min-width: 900px) {
+  button.nav-btn-pages {
+    width: 8rem;
+  }
+
+  h1.head-scroll {
+    font-size: 2.2rem;
+  }
+
+  .page-scroll {
+    font-size: 1.2rem;
+  }
+
+  button.btn-scroll {
+    font-size: 0.7rem;
+    width: 6rem;
+    margin-top: 1.8rem;
+  }
+
+  p.blog-text {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1400px) {
+  button.nav-btn-pages {
+    width: 12rem;
+  }
+  h1.head-scroll {
+    font-size: 2.8rem;
+  }
+
+  .page-scroll {
+    font-size: 1.2rem;
+  }
+
+  button.btn-scroll {
+    font-size: 1.2rem;
+    width: 12rem;
+    height: 3rem;
+  }
+}
