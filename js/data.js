@@ -1,8 +1,9 @@
 const homeTooltips = [
   {
     id: 0,
-    heading: "Mars",
-    tooltipText: "Explore the weather on Mars and the different landing sites.",
+    heading: "Asteroids",
+    tooltipText:
+      "Explore a catalog of near-Earth asteroids that have safely passed by Earth's atmosphere, curated by the Near Earth Object Web Service (NeoWs).",
   },
   {
     id: 1,
@@ -11,9 +12,9 @@ const homeTooltips = [
   },
   {
     id: 2,
-    heading: "Kepler Field",
+    heading: "Solar Flares",
     tooltipText:
-      "Explore the different planets within the Kepler Field and the data that NASA has stored on them.",
+      "Dive into the fascinating realm of solar flares as we embark on an exploration of these dynamic celestial phenomena.",
   },
   {
     id: 3,
@@ -37,8 +38,8 @@ const tabDetails = [
   },
   {
     id: 1,
-    title: "Mars",
-    info: "Explore the weather on Mars and the different landing sites.",
+    title: "Asteroids",
+    info: "Explore a catalog of near-Earth asteroids that have safely passed by Earth's atmosphere, curated by the Near Earth Object Web Service (NeoWs).",
   },
   {
     id: 2,
@@ -47,8 +48,8 @@ const tabDetails = [
   },
   {
     id: 3,
-    title: "Kepler Field",
-    info: "Explore the different planets within the Kepler Field and the data that NASA has stored on them.",
+    title: "Solar Flares",
+    info: "Dive into the fascinating realm of solar flares as we embark on an exploration of these dynamic celestial phenomena.",
   },
   {
     id: 4,
@@ -61,3 +62,10 @@ const tabDetails = [
     info: "This section comprises of my design choices and intentions when creating this website.",
   },
 ];
+
+let homeUrl = "../index.html";
+let blogUrl = "../html/blog.html";
+let picUrl = "../html/daily-img.html";
+let designUrl = "../html/design.html";
+let kepUrl = "../html/kepler-field.html";
+let marsUrl = "../html/mars.html";

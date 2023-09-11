@@ -4,8 +4,8 @@ names = [
   "Blog Section",
   "Visual Marvel",
   "Design Section",
-  "Kepler Field",
-  "Mars",
+  "Solar Flares",
+  "Asteroids",
 ];
 
 //Navigation Bar:
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
   </section>
   <section class="nav-tabs-pages">
     <button class="nav-btn-pages home-btn-pages"">Homepage</button>
-    <button class="nav-btn-pages mars-btn-pages">Mars</button>
+    <button class="nav-btn-pages mars-btn-pages">Asteroids</button>
     <button class="nav-btn-pages pic-btn-pages">Visual Marvel</button>
-    <button class="nav-btn-pages kepler-btn-pages">Kepler Field</button>
+    <button class="nav-btn-pages kepler-btn-pages">Solar Flares</button>
     <button class="nav-btn-pages blog-btn-pages">Blog Section</button>
     <button class="nav-btn-pages design-btn-pages">Design Section</button>
   </section>
@@ -34,81 +34,43 @@ document.addEventListener("DOMContentLoaded", () => {
   let tooltip = document.querySelector(".tooltip-pages-show");
 
   home.addEventListener("click", () => {
-    window.location.href = "../index.html";
-  });
-
-  home.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
-
-  home.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
+    window.location.href = homeUrl;
   });
   let ast = document.querySelector(".mars-btn-pages");
 
   ast.addEventListener("click", () => {
-    window.location.href = "../html/mars.html";
+    window.location.href = marsUrl;
   });
-
-  ast.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
-
-  ast.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
-  });
-
   let picBtn = document.querySelector(".pic-btn-pages");
 
   picBtn.addEventListener("click", () => {
-    window.location.href = "../html/daily-img.html";
-  });
-
-  picBtn.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
-
-  picBtn.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
+    window.location.href = picUrl;
   });
 
   let kep = document.querySelector(".kepler-btn-pages");
 
   kep.addEventListener("click", () => {
-    window.location.href = "../html/kepler-field.html";
+    window.location.href = kepUrl;
   });
-  kep.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
-
-  kep.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
-  });
-
   let blog = document.querySelector(".blog-btn-pages");
 
   blog.addEventListener("click", () => {
-    window.location.href = "../html/blog.html";
+    window.location.href = blogUrl;
   });
-  blog.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
-
-  blog.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
-  });
-
   let design = document.querySelector(".design-btn-pages");
 
   design.addEventListener("click", () => {
-    window.location.href = "../html/design.html";
+    window.location.href = designUrl;
   });
-  design.addEventListener("mouseover", () => {
-    tooltip.className = "tooltip-pages";
-  });
+  let navBtns = document.querySelectorAll(".nav-btn-pages");
+  navBtns.forEach((btn) => {
+    btn.addEventListener("mouseover", () => {
+      console.log("over");
+    });
 
-  design.addEventListener("mouseout", () => {
-    tooltip.className = "tooltip-pages-show";
+    btn.addEventListener("mouseout", () => {
+      console.log("out");
+    });
   });
 });
 
