@@ -54,6 +54,10 @@ d3.json(metUrl).then((data) => {
     .domain([0, yMax + 5])
     .range([HEIGHT, 0]);
   let rScale = d3.scaleSqrt().domain([0, 30]).range([2, 50]);
+  let colourScale = d3
+    .scaleOrdinal()
+    .domain(["true", "false"])
+    .range(["red", "green"]);
 
   function createXAxis() {
     svg
@@ -104,8 +108,11 @@ d3.json(metUrl).then((data) => {
         xScale(d.close_approach_data[0].miss_distance.kilometers)
       )
       .attr("cy", (d) => yScale(d.absolute_magnitude_h))
-      .attr("r", (d) => rScale(d.absolute_magnitude_h))
-      .style("fill", "#000")
+      .attr("r", (d) =>
+        rScale(d.estimated_diameter.kilometers.estimated_diameter_max * 10)
+      )
+      .style("fill", (d) => colourScale(d.is_potentially_hazardous_asteroid))
+      .style("stroke", "#000")
       .style("stroke-width", "1px")
       .style("opacity", 0.7);
     console.log(data);
