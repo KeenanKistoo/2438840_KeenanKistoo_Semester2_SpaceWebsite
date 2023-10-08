@@ -406,8 +406,8 @@ a.foot-links {
   height: 12rem;
 }
 
-button.blog-btns {
-}
+/*button.blog-btns {
+}*/
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;
