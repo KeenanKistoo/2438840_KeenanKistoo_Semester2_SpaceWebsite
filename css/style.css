@@ -74,7 +74,6 @@ header.header {
   background-color: white;
   width: 100vw;
   margin-top: 0.7rem;
-  z-index: 100;
 }
 h1.main-head-pages {
   display: block;
@@ -225,6 +224,9 @@ img.wireframe {
 }
 
 /*Blog Section Elements*/
+section.hide-blog {
+  transform: translateX(-1000%);
+}
 section.blog-visual {
   display: grid;
   height: 30rem;
@@ -361,6 +363,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 1.5rem;
   background-color: black;
   color: #fff;
   padding: 10px;
@@ -371,9 +374,10 @@ footer {
 .footer-elements {
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center;
+  align-items: baseline;
+  align-self: baseline;
   width: 100%;
+  margin-top: -1rem;
   font-family: "Manrope", sans-serif;
 }
 
@@ -402,6 +406,8 @@ a.foot-links {
   height: 12rem;
 }
 
+button.blog-btns {
+}
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;
