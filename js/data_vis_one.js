@@ -95,7 +95,7 @@ d3.json(metUrl).then((data) => {
           .attr("transform", "rotate(-90)")
           .style("fill", "#000")
           .style("font-size", "1.5rem")
-          .text("Absolute Magnitude");
+          .text("Absolute Magnitude (h)");
       });
   }
   createXAxis();
@@ -105,8 +105,8 @@ d3.json(metUrl).then((data) => {
     .select("#tooltip")
     .append("section")
     .style("opacity", 1)
-    .style("width", "170px")
-    .style("height", "100px")
+    .style("width", "200px")
+    .style("height", "170px")
     .style("border-radius", "5px")
     .style("padding", "12px")
     .style("background-color", "#000")
@@ -118,15 +118,31 @@ d3.json(metUrl).then((data) => {
     tooltip
       .transition()
       .duration(500)
-      .style("opacity", 1)
+      .style("opacity", 0.9)
       .style("left", d3.pointer(event)[0] + 340 + "px")
-      .style("top", d3.pointer(event)[1] - 750 + "px");
+      .style("top", d3.pointer(event)[1] - 750 + "px")
+      .style("font-family", "'Manrope', sans-serif");
 
-    //tooltip.html("Country: " + d.country);
+    tooltip.html(
+      "Name: " +
+        d.name +
+        "<br>h = " +
+        d.absolute_magnitude_h +
+        "<br> Min Est Diameter: " +
+        d.estimated_diameter.kilometers.estimated_diameter_min.toFixed(4) +
+        "km" +
+        "<br> Max Est Diameter: " +
+        d.estimated_diameter.kilometers.estimated_diameter_max.toFixed(4) +
+        "km" +
+        "<br> Miss Distance: " +
+        d.close_approach_data[0].miss_distance.kilometers +
+        "km"
+    );
   }
 
   function hideTooltip() {
-    tooltip.style("opacity", 0);
+    tooltip.style("opacity", 0).style("z-index", 1000);
+    //console.log(tooltip.style("opacity"));
   }
 
   function moveTooltip() {
@@ -143,6 +159,7 @@ d3.json(metUrl).then((data) => {
       .enter()
       .append("circle")
       .attr("class", (d) => {
+        return;
         "bubbles " + d.is_potentially_hazardous_asteroid;
       })
       .attr("cx", (d) =>
@@ -158,9 +175,9 @@ d3.json(metUrl).then((data) => {
       .style("opacity", 0.7)
       .on("mouseover", (event, datum) => showTooltip(datum))
       .on("mousemove", (event, datum) => moveTooltip())
-      .on("mouseout", (event, datum) => hideTooltip());
+      .on("mouseout", (event, datum) => hideTooltip(event));
 
-    //console.log(data);
+    console.log(data);
   }
 
   const myData = data.near_earth_objects[date[index]];
@@ -184,5 +201,68 @@ d3.json(metUrl).then((data) => {
     const myData = data.near_earth_objects[date[index]];
     CreateBubbles(myData);
   });
+
+  //Create Key:
+  let hazardous = ["True (Red)", "False (Green)"];
+  function highlight(d) {
+    d3.selectAll(".bubbles").style("opacity", 0.1);
+    d3.selectAll("." + d).style("opacity", 1);
+  }
+  function removeHighlight(d) {
+    d3.selectAll(".bubbles").style("opacity", 0.7);
+  }
+
+  function expandCircle(d) {
+    d3.selectAll(".legend" + d)
+      .transition()
+      .duration(300)
+      .attr("r", 17);
+  }
+  function shrinkCircle(d) {
+    d3.selectAll(".legend" + d)
+      .transition()
+      .duration(300)
+      .attr("r", 15);
+  }
+  const legendX = 1175;
+  const legendY = 265;
+  svg
+    .append("text")
+    .attr("x", legendX)
+    .attr("y", legendY - 20)
+    .style("fill", "#000")
+    .style("font-size", "1rem")
+    .text("Potentially Hazardous:");
+
+  svg
+    .append("g")
+    .selectAll()
+    .data(hazardous)
+    .enter()
+    .append("circle")
+    .attr("class", (d) => "legend" + d)
+    .attr("cx", 1225)
+    .attr("cy", (d, i) => {
+      return 280 + i * 35;
+    })
+    .attr("r", 15)
+    .style("fill", (d) => colourScale(d))
+    .style("stroke", "black")
+    .style("stroke-width", "1px")
+    .on("mouseover", (event, datum) => highlight(datum))
+    .on("mouseover", (event, datum) => expandCircle(datum))
+    .on("mouseout", (event, datum) => removeHighlight(datum))
+    .on("mouseout", (event, datum) => shrinkCircle(datum));
+
+  svg
+    .selectAll()
+    .data(hazardous)
+    .enter()
+    .append("text")
+    .attr("x", 1250)
+    .attr("y", (d, i) => {
+      return 285 + i * 35;
+    })
+    .style("fill", "#000")
+    .text((d) => d);
 });
-//create tooltip
