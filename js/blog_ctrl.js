@@ -19,5 +19,5 @@ function FirstBlogPost() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  FirstBlogPost();
+  //FirstBlogPost();
 });

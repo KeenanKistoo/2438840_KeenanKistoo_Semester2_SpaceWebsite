@@ -113,6 +113,7 @@ h1.head-scroll {
   font-size: 3.2rem;
   text-align: center;
   margin-top: 1rem;
+  margin-left: 3.7rem;
   transition: 0.3s;
 }
 section.nav-tabs-pages {
@@ -212,10 +213,12 @@ section.design-para {
   display: block;
   font-family: "Manrope", sans-serif;
   text-align: center;
-  margin-left: 22em;
-  margin-right: 22rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
-
+#sec-it {
+  margin-top: -11rem;
+}
 h2.design-head {
   font-size: 1.7rem;
 }
@@ -373,6 +376,12 @@ button.vis-btn {
   font-family: "Manrope", sans-serif;
   margin-left: 30.5%;
   margin-right: 30.5%;
+}
+#bar-head {
+  font-family: "Manrope", sans-serif;
+  margin-left: 30.5%;
+  margin-right: 30.5%;
+  margin-top: -6rem;
 }
 
 .graph {
