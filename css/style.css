@@ -399,7 +399,7 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
-  z-index: 100;
+  z-index: 99;
 }
 
 .footer-elements {
@@ -452,10 +452,6 @@ a.foot-links {
   padding-bottom: 10rem;
 }
 
-#design-end {
-  padding-bottom: 10rem;
-}
-
 #meteor {
   padding-bottom: 15rem;
 }
@@ -466,6 +462,30 @@ a.foot-links {
 
 #tooltip {
   margin-top: -10rem;
+}
+
+section.scroll-btns {
+  padding-bottom: 6rem;
+}
+
+#second {
+  margin-top: 12rem;
+}
+button#scroll-btn {
+  margin-left: 51rem;
+  margin-top: 1rem;
+  height: 3rem;
+  width: 8rem;
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+}
+button#scroll-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 /*button.blog-btns {
 }*/
