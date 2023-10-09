@@ -241,4 +241,198 @@ blogCode = [
     alt="Planets Divider Line"
   />
 </section>`,
+  `<section class="blog-post" id="blog-three">
+<h3 class="blog-post-head">
+  Blog Post 3 - Close Reading - Interaction for Data Visualisation
+</h3>
+<p class="blog-txt">
+  My working description of interaction within a web-based medium
+  refers to the dynamic collaboration between different elements. On
+  one side, there is the user who engages with the web interface using
+  their input devices (such as a keyboard, mouse, or touchscreen) and
+  the underlying hardware and software of their device. On the other
+  side, there is the developer who has created the user interface that
+  facilitates this interaction. Together, they work to exchange
+  specific information seamlessly, allowing users to navigate, access,
+  and interact with content or services on the web. Interactive data
+  visualisations are always complicated to create for several reasons.
+  Firstly, there is no clear or standard definition of “interaction”
+  as pointed out by Dimara and Perin (Dimara & Perin, 2019: 1). But
+  also, subjectivity plays a crucial role in the success of one’s data
+  visualisations. There is always this probable scenario that some
+  individuals may not fully understand the interactivity that you have
+  implemented into the visualisations or they simply do not understand
+  the data that is being displayed; this is something that I struggle
+  with in my work and hopefully, after completing this reflection I
+  find ways to improve my understanding and methods of creating
+  interactive data visualisations.
+</p>
+<p class="blog-txt">
+  In the second section, the authors delve into their approach to
+  gathering definitions, concepts, ideas, and opinions related to
+  interaction, which primarily involves conducting surveys. They rated
+  their responses on a scale ranging from 1 to 2 (1 being less
+  in-depth, descriptive, and so on; and 2 being more in-depth
+  explanations and/or opinions) (Dimara & Perin, 2019: 3). Each
+  response was “tagged” according to certain “themes” (Dimara & Perin,
+  2019: 3). I would like to extend on my working description of
+  interaction and attempt to meet the expectations set forth by the
+  authors according to their tags: “definition of interaction,
+  critical on interaction, benefits of interaction” (Dimara & Perin,
+  2019: 3).
+</p>
+<h4 class="sub-head-blog">Definition of Interaction:</h4>
+<p class="blog-txt">
+  “Interaction within a web-based medium refers to the dynamic
+  collaboration between different elements. On one side, there is the
+  user who engages with the web interface using their input devices
+  (such as a keyboard, mouse, or touchscreen) and the underlying
+  hardware and software of their device. On the other side, there is
+  the developer who has created the user interface that facilitates
+  this interaction. Together, they work to exchange specific
+  information seamlessly, allowing users to navigate, access, and
+  interact with content or services on the web.” – mentioned above.
+</p>
+<h4 class="sub-head-blog">
+  Critical on Interaction (Dimara & Perin, 2019: 3):
+</h4>
+<p class="blog-txt">
+  To reiterate the subjectivity point, one cannot account for every
+  individual’s levels of comprehension and understanding. Yes, one can
+  argue that tutorials and explanations may help new users understand
+  the interactive portions of a website however, too much information
+  could create a lack of faith in one’s data visualization creation
+  capabilities. The balance between too much and too little
+  information is a nuanced and complex matter which I find very
+  difficult to manage as an individual who has minimal experience with
+  interactive data visualizations.
+</p>
+<h4 class="sub-head-blog">
+  Benefits of Interaction (Dimara & Perin, 2019: 3):
+</h4>
+<p class="blog-txt">
+  It creates a more hands-on experience for the user and allows them
+  to control what is communicated to them provided the website’s
+  interface elements allow them to. This intended experience allows
+  users to be more engaged on the website. From previous experiences,
+  I have often been told that I should show and not tell. In the cases
+  where I am successful in this, specifically concerning my navigation
+  interface, I find that navigating through my website becomes much
+  easier for the user.
+</p>
+<p class="blog-txt">
+  Now moving on to the third section of the reading, “What Interaction
+  for Visualization Must Involve” based on my definition of
+  interaction: the user and the data described can be identified as
+  “external entities” (Dimara & Perin, 2019: 3-4). Regarding the
+  "external actions," it's quite interesting how the authors
+  characterize interaction as "dialogue" (Dimara & Perin, 2019: 4). A
+  rudimentary understanding of dialogue would two or more individuals
+  communicating with each other. In this case, however, it is the
+  communication between the “user and the visualisation system”
+  through interaction (Dimara & Perin, 2019: 3-4). I understand this
+  relationship as a form of communication between said “external
+  entities” (Dimara & Perin, 2019: 3-4). It also emphasises that the
+  “visualisation system” relies on these “entities” to function
+  accordingly (Dimara & Perin, 2019: 3-4).
+</p>
+<p class="blog-txt">
+  Before I move on, I believe that it is important to differentiate
+  between “the terms related to interaction” (Dimara & Perin, 2019:
+  5):
+</p>
+<h4 class="sub-head-blog">
+  Interaction vs. Interaction Technique (Dimara & Perin, 2019: 5):
+</h4>
+<p class="blog-txt">
+  “Interaction” is the overarching idea of how the “user” interacts
+  with the “visualisation system” (Dimara & Perin, 2019: 5).
+  “Interaction Technique,” on the other hand, is the elements that
+  allow the user to interact with the “visualisation system”; for
+  example, the mouse, keyboard, touchpad, touchscreen, or any relevant
+  “hardware/software” (Dimara & Perin, 2019: 5).
+</p>
+<h4 class="sub-head-blog">
+  Science of Interaction (Dimara & Perin, 2019: 5):
+</h4>
+<p class="blog-txt">
+  The academic approach to acquiring knowledge and understanding
+  interacts with the overall goal of improving this concept (Dimara &
+  Perin, 2019: 5). The authors point out that interaction is used to
+  “amplify cognition in active, human-driven data exploration” (Dimara
+  & Perin, 2019: 5). The “science” that I am referring to will allow
+  individuals to create interactive data visualizations that are
+  better understood globally; this somewhat standardized method of
+  creation will limit the subjectivity critique that I have previously
+  mentioned.
+</p>
+<p class="blog-txt">
+  Before I conclude, I'd like to provide a summary and share my
+  perspective on the relationship between interaction in visualisation
+  and the field of Human-Computer Interaction (HCI) (Dimara & Perin,
+  2019: 6-7).
+</p>
+<h4 class="sub-head-blog">
+  Scope of User Intent (Dimara & Perin, 2019: 6):
+</h4>
+
+<p class="blog-txt">
+  The authors argue that the interaction that takes place should be
+  easier to navigate and efficient. The user should be able to achieve
+  their intended goal when entering the website quickly and without
+  having to worry about confusing and overly elaborate interactions.
+  To add to this, I do think that consistency is a crucial aspect of
+  user intent and experience. If the created interactions are
+  consistent throughout the website, there is no need for repetitive
+  and excessive explanations.
+</p>
+<h4 class="sub-head-blog">
+  User Profiling (Dimara & Perin, 2019: 7):
+</h4>
+<p class="blog-txt">
+  In HCI, this refers to the knowledge and skills of different groups
+  of individuals who have access to the website. For example, how well
+  or poorly can a beginner/lower-skilled individual interact with your
+  visualisations? Or is there too much unnecessary information for
+  individuals who have already interacted with your visualisations
+  before?
+</p>
+<h4 class="sub-head-blog">
+  What Constitutes Good Interaction (Dimara & Perin, 2019: 7):
+</h4>
+<p class="blog-txt">
+  The authors argue that good interactions differ from HCI (Dimara &
+  Perin, 2019: 7). Rather, good interactions improve and enhance the
+  user’s understanding of the data. I would argue that good
+  interactions also include the responsiveness and smoothness of
+  interface elements within the visualisations. By smoothness, I’m
+  implying the speed of pop-ups or colour changes, animation
+  transitions, and all related elements.
+</p>
+<p class="blog-txt">
+  In conclusion, it is important to note that interaction is a complex
+  concept that differs for different data sets as well as audiences. I
+  have often emphasized the ridiculously fine line between a balanced
+  and efficient interface system and I do think that guidelines will
+  improve our understanding of this term, however, the systems will be
+  constantly changing due to how unique each individual is. I have
+  found within the feedback that I have received that it is often
+  minor details that separate good interactions from frustrating ones.
+</p>
+<h4 class="sub-head-blog">Reference:</h4>
+<p class="blog-txt">
+  Dimara, E & Perin, P. (2019). What is Interaction for Data
+  Visualization? IEEE Transactions on Visualization and Computer
+  Graphics, Institute of Electrical and Electronics Engineers, 2020,
+  26 (1), pp.119 - 129. ff10.1109/TVCG.2019.2934283ff. ffhal-02197062f
+</p>
+</section>`,
+  `<section class="blog-post">
+<h3 class="blog-post-head">
+  Blog Post #04 - Critical Reflection - My Data-Driven Artwork
+</h3>
+<p class="blog-txt">
+  Will be added on 25th October 2023
+</p>
+</section>`,
 ];

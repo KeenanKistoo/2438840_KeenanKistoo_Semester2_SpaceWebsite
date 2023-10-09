@@ -421,6 +421,33 @@ a.foot-links {
   padding-bottom: 10rem;
 }
 
+.blog-btns {
+  padding-bottom: 8rem;
+  margin-left: 29rem;
+  margin-right: auto;
+  height: 3rem;
+  width: 70rem;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+}
+
+.ctrl-btns {
+  height: 2.7rem;
+  width: 8rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+}
+.ctrl-btns:hover {
+  height: 2.7rem;
+  width: 8rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 #blog-three {
   padding-bottom: 10rem;
 }
