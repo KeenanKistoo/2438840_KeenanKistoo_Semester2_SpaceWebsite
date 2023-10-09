@@ -247,6 +247,12 @@ img.wireframe {
   margin-bottom: auto;
   border: 0.15rem black solid;
 }
+img.wireframe-tab {
+  height: 25rem;
+  width: 20rem;
+  margin-bottom: auto;
+  border: 0.15rem black solid;
+}
 
 /*Blog Section Elements*/
 section.hide-blog {
