@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Picture of the Day</title>
+    <title>Mini Game</title>
   </head>
   <body>
     <header class="header" id="1"></header>
     <main class="main-style">
-      <p class="placeholder-txt">Data Art Will Go In This Section</p>
+      <section class="blog-post" id="game-elements">
+        <h1 class="main-game-head">Solar Flare Game (Data-Driven Artwork):</h1>
+        <p class="blog-txt">
+          In this game, you will be in space for 7 days (not literally, it'll
+          probably be about 10 mins). You will need to monitor and maintain your
+          technological devices to ensure that you will safely return home.
+        </p>
+        <button id="start-btn">Start Game</button>
+      </section>
+      <section id="game"></section>
     </main>
     <footer class="footer"></footer>
   </body>
   <script src="../js/data.js"></script>
   <script src="../js/nav.js"></script>
+  <script src="../js/game.js"></script>
 </html>

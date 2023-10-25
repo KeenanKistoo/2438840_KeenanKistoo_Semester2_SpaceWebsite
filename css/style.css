@@ -493,6 +493,35 @@ button#scroll-btn:hover {
   color: white;
   cursor: pointer;
 }
+
+button#start-btn {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: white;
+  transition: 0.25s linear;
+}
+button#start-btn:hover {
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.25s linear;
+}
+
+h1.main-head-game {
+  font-size: 12rem;
+}
+
+section#game-elements {
+  font-size: 1.5rem;
+}
+
+#game {
+  padding-bottom: 3rem;
+}
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;

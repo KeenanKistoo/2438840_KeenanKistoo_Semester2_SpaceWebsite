@@ -7,8 +7,9 @@ const homeTooltips = [
   },
   {
     id: 1,
-    heading: "Visual Marvel",
-    tooltipText: "View The Picture Of The Day!",
+    heading: "Mini Game",
+    tooltipText:
+      "Survive the solar storm and lead your crew to safety amidst the Sun's raging fury!",
   },
   {
     id: 2,
@@ -43,8 +44,8 @@ const tabDetails = [
   },
   {
     id: 2,
-    title: "Visual Marvel",
-    info: "View The Picture Of The Day!",
+    title: "Mini Game",
+    info: "Survive the solar storm and lead your crew to safety amidst the Sun's raging fury!",
   },
   {
     id: 3,
