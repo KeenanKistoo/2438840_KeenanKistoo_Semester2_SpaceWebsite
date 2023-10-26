@@ -522,6 +522,22 @@ section#game-elements {
 #game {
   padding-bottom: 3rem;
 }
+
+.game-head {
+  font-family: "Manrope", sans-serif;
+  background-color: black;
+}
+
+.instructions {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.noti {
+  color: red;
+}
+
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;

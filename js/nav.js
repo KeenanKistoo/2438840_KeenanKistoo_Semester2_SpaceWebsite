@@ -2,7 +2,7 @@
 
 names = [
   "Blog Section",
-  "Visual Marvel",
+  "Mini Game",
   "Design Section",
   "Solar Flares",
   "Asteroids",
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <ul>
     <a href="../index.html" class="foot-links">Homepage</a
     ><a href="../html/mars.html" class="foot-links">Asteroids</a
-    ><a href="../html/daily-img.html" class="foot-links">Visual Marvel</a
+    ><a href="../html/daily-img.html" class="foot-links">Mini Game</a
     ><a href="../html/kepler-field.html" class="foot-links"
       >Solar Flares</a
     ><a href="../html/blog.html" class="foot-links">Blog Section</a
