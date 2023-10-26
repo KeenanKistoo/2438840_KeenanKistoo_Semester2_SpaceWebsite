@@ -520,7 +520,7 @@ section#game-elements {
 }
 
 #game {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .game-head {
@@ -543,6 +543,13 @@ section#game-elements {
   color: red;
 }
 
+.hide {
+  transform: translateX(-1000000%);
+}
+#game-ex {
+  margin-top: -53rem;
+  padding-bottom: 2rem;
+}
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;
