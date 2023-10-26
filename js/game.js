@@ -62,8 +62,7 @@ svg
   .attr("height", 500)
   .attr("rx", 0)
   .attr("ry", 0)
-  .style("fill", "black")
-  .style("border-radius", 0);
+  .style("fill", "black");
 
 //Adding instructions:
 let text = svg
@@ -169,29 +168,42 @@ text3
   .text("Look at the example on the next page as a guide. GOOD LUCK!")
   .attr("x", 750)
   .attr("dy", 30)
-  .style("text-anchor", "middle")
-  .classed("noti", true);
+  .style("text-anchor", "middle");
 
-// Create a group element for the button
-const buttonGroup = svg.append("g");
+const buttonGroup = svg.append("g").classed("game-btn", true);
 
 // Create a rectangle as the button background
-buttonGroup
+const nextBtn = buttonGroup
   .append("rect")
-  .attr("x", 750)
-  .attr("y", 30)
-  .attr("width", 200) // Adjust the width as needed
-  .attr("height", 40) // Adjust the height as needed
-  .attr("fill", "blue"); // Set the button color
+  .attr("x", 650)
+  .attr("y", 650)
+  .attr("width", 200)
+  .attr("height", 50)
+  .attr("fill", "black")
+  .attr("stroke", "white")
+  .attr("stroke-width", 2)
+  .on("mouseover", () => {
+    nextBtn.attr("fill", "white").style("cursor", "pointer");
+    btnTxt.attr("fill", "black").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    nextBtn.attr("fill", "black");
+    btnTxt.attr("fill", "white");
+  });
 
 // Create text for the button
-buttonGroup
+const btnTxt = buttonGroup
   .append("text")
-  .attr("x", 775) // Adjust the x-coordinate for text positioning
-  .attr("y", 55) // Adjust the y-coordinate for text positioning
-  .text("Look at the example on the next page as a guide. GOOD LUCK!");
+  .attr("x", 695) // Adjust the x-coordinate for text positioning
+  .attr("y", 680) // Adjust the y-coordinate for text positioning
+  .text("VIEW EXAMPLE")
+  .attr("fill", "white")
+  .on("mouseover", () => {
+    nextBtn.attr("fill", "white").style("cursor", "pointer");
+    btnTxt.attr("fill", "black").style("cursor", "pointer");
+  });
 
-// Add click event handling for the button
+//Add click event handling for the button
 buttonGroup.on("click", () => {
   // Add the action you want to perform when the button is clicked
   // For example, you can add a function to navigate to the next page.

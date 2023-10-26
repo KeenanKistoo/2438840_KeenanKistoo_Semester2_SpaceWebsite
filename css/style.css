@@ -533,7 +533,12 @@ section#game-elements {
   font-size: 1.2rem;
   text-align: center;
 }
-
+.game-btn {
+  display: block;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
 .noti {
   color: red;
 }
