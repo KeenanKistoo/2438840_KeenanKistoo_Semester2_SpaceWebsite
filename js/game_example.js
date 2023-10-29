@@ -132,7 +132,16 @@ let astroBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    astroBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(astroBtn);
+  })
+  .on("click", () => {
+    ClassCheck(astroBtn);
+  });
 let astroHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -150,7 +159,16 @@ let flightBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    flightBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(flightBtn);
+  })
+  .on("click", () => {
+    ClassCheck(flightBtn);
+  });
 let flightHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -168,7 +186,16 @@ let teleBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    teleBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(teleBtn);
+  })
+  .on("click", () => {
+    ClassCheck(teleBtn);
+  });
 let teleHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -186,7 +213,16 @@ let noneBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    noneBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(noneBtn);
+  })
+  .on("click", () => {
+    ClassCheck(noneBtn);
+  });
 let noneHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -217,7 +253,16 @@ let northBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    northBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(northBtn);
+  })
+  .on("click", () => {
+    ClassCheck(northBtn);
+  });
 let northHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -235,7 +280,16 @@ let southBtn = example
   .attr("r", 30)
   .style("fill", "white")
   .attr("stroke", "grey")
-  .attr("stroke-width", 10);
+  .attr("stroke-width", 10)
+  .on("mouseover", () => {
+    southBtn.style("fill", "rgb(125, 188, 125)").style("cursor", "pointer");
+  })
+  .on("mouseout", () => {
+    ClickCheck(southBtn);
+  })
+  .on("click", () => {
+    ClassCheck(southBtn);
+  });
 let southHeading = example
   .append("text")
   .attr("id", "timer-txt")
@@ -245,3 +299,20 @@ let southHeading = example
   .classed("game-head", true)
   .attr("font-size", "1.5rem")
   .attr("fill", "white");
+
+function ClickCheck(button) {
+  if (button.classed("clicked")) {
+    button.style("fill", "green");
+  } else {
+    button.style("fill", "white");
+  }
+}
+
+function ClassCheck(button) {
+  if (button.classed("clicked")) {
+    button.classed("clicked", false);
+  } else {
+    button.style("fill", "green");
+    button.classed("clicked", true);
+  }
+}
