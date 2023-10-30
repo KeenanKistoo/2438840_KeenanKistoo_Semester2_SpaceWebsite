@@ -34,15 +34,101 @@ function CreateStars() {
 
 CreateStars();
 
-/* ----------------------------------------------------------MAIN HEADING-------------------------------------------------------------- */
+/* ----------------------------------------------------------MAIN TEXT-------------------------------------------------------------- */
+example
+  .append("rect")
+  .attr("x", 200)
+  .attr("y", 10)
+  .attr("width", 1000)
+  .attr("height", 130)
+  .attr("rx", 0)
+  .attr("ry", 0)
+  .style("fill", "black")
+  .attr("stroke", "grey")
+  .attr("stroke-width", 0.2);
 example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 550)
-  .attr("y", 100)
-  .text("Example Level")
+  .attr("x", 620)
+  .attr("y", 35)
+  .text("Solar Flare Data")
   .classed("game-head", true)
-  .attr("font-size", "4rem")
+  .attr("font-size", "1.5rem")
+  .attr("fill", "white");
+example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 240)
+  .attr("y", 73)
+  .text("Begin Time")
+  .classed("game-head", true)
+  .attr("font-size", "1.3rem")
+  .attr("fill", "white");
+let beginTimeText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 255)
+  .attr("y", 110)
+  .text("09:57")
+  .classed("game-head", true)
+  .attr("font-size", "1.6rem")
+  .attr("fill", "white");
+
+example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 505)
+  .attr("y", 73)
+  .text("End Time")
+  .classed("game-head", true)
+  .attr("font-size", "1.3rem")
+  .attr("fill", "white");
+let endTimeText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 518)
+  .attr("y", 110)
+  .text("09:57")
+  .classed("game-head", true)
+  .attr("font-size", "1.6rem")
+  .attr("fill", "white");
+
+example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 755)
+  .attr("y", 73)
+  .text("Class Type")
+  .classed("game-head", true)
+  .attr("font-size", "1.3rem")
+  .attr("fill", "white");
+let classText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 785)
+  .attr("y", 110)
+  .text("C1.1")
+  .classed("game-head", true)
+  .attr("font-size", "1.6rem")
+  .attr("fill", "white");
+
+example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 1000)
+  .attr("y", 73)
+  .text("Source Location")
+  .classed("game-head", true)
+  .attr("font-size", "1.3rem")
+  .attr("fill", "white");
+let sLocation = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 1034)
+  .attr("y", 110)
+  .text("SSSSSS")
+  .classed("game-head", true)
+  .attr("font-size", "1.6rem")
   .attr("fill", "white");
 
 /* ----------------------------------------------------------TIMER ELEMENTS-------------------------------------------------------------- */
@@ -77,7 +163,6 @@ function Timer() {
   time--;
   console.log(time);
 }
-
 /* -----------------------------------------------------UI FOR THE LEFT HAND SIDE------------------------------------------------------- */
 /*---------------------Backgrounds----------------------*/
 example
@@ -145,11 +230,11 @@ let astroBtn = example
 let astroHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 140)
+  .attr("x", 155)
   .attr("y", 270)
   .text("Astronaut Timeline:")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 
 let flightBtn = example
@@ -172,11 +257,11 @@ let flightBtn = example
 let flightHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 590)
+  .attr("x", 610)
   .attr("y", 270)
   .text("Air Traffic Timeline:")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 
 let teleBtn = example
@@ -199,11 +284,11 @@ let teleBtn = example
 let teleHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 100)
+  .attr("x", 120)
   .attr("y", 520)
   .text("Telecommunications Timeline:")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 
 let noneBtn = example
@@ -226,11 +311,39 @@ let noneBtn = example
 let noneHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 630)
+  .attr("x", 640)
   .attr("y", 550)
   .text("Notify None")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
+  .attr("fill", "white");
+/* -----------------------------------------------------Text Descriptions------------------------------------------------------- */
+let astroText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 150)
+  .attr("y", 325)
+  .text("")
+  .classed("game-head", true)
+  .attr("font-size", "1.2rem")
+  .attr("fill", "white");
+let flightText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 623)
+  .attr("y", 325)
+  .text("")
+  .classed("game-head", true)
+  .attr("font-size", "1.2rem")
+  .attr("fill", "white");
+let telecomText = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 150)
+  .attr("y", 595)
+  .text("")
+  .classed("game-head", true)
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 /* -----------------------------------------------------UI FOR THE RIGHT HAND SIDE------------------------------------------------------- */
 /*---------------------Backgrounds----------------------*/
@@ -266,11 +379,11 @@ let northBtn = example
 let northHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 1090)
+  .attr("x", 1110)
   .attr("y", 270)
   .text("Northern Hemisphere")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 
 let southBtn = example
@@ -293,11 +406,11 @@ let southBtn = example
 let southHeading = example
   .append("text")
   .attr("id", "timer-txt")
-  .attr("x", 1090)
-  .attr("y", 550)
+  .attr("x", 1110)
+  .attr("y", 520)
   .text("Southern Hemisphere")
   .classed("game-head", true)
-  .attr("font-size", "1.5rem")
+  .attr("font-size", "1.2rem")
   .attr("fill", "white");
 
 function ClickCheck(button) {
@@ -316,3 +429,9 @@ function ClassCheck(button) {
     button.classed("clicked", true);
   }
 }
+
+astroScript = ["Maintenance @", "Earth Observation @", "Experiment @"];
+
+flightScript = ["Departure @", "Landing @"];
+
+telecomScript = ["Systems active @", "Maintenance @"];

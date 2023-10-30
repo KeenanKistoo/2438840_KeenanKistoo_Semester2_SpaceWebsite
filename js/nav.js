@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let navBtns = document.querySelectorAll(".nav-btn-pages");
   navBtns.forEach((btn) => {
     btn.addEventListener("mouseover", () => {
-      console.log("over");
+      //console.log("over");
     });
 
     btn.addEventListener("mouseout", () => {
-      console.log("out");
+      //console.log("out");
     });
   });
 });
