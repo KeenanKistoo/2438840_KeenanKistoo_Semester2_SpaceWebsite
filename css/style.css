@@ -550,6 +550,17 @@ section#game-elements {
   margin-top: -53rem;
   padding-bottom: 2rem;
 }
+
+#game-ui {
+  width: 40rem;
+}
+#game-ov {
+  width: 35rem;
+}
+
+#blog-three {
+  padding-top: 30rem;
+}
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;

@@ -428,11 +428,238 @@ blogCode = [
 </p>
 </section>`,
   `<section class="blog-post">
-<h3 class="blog-post-head">
-  Blog Post #04 - Critical Reflection - My Data-Driven Artwork
-</h3>
-<p class="blog-txt">
-  Will be added on 25th October 2023
-</p>
-</section>`,
+  
+  <h3 class="blog-post-head">
+    Blog Post #04 - Critical Reflection of My Data-Driven Artwork
+  </h3>
+  <p class="blog-txt">
+    I have opted for a quiz-based browser game for my data-driven
+    artwork. Growing up, I played several games such as The Impossible
+    Quiz and GeoGuessr. Even though the limitations and affordances of
+    programming were completely different ten to fifteen years ago, I
+    wanted to challenge myself to use D3.js to create my own quiz-based
+    browser game.
+  </p>
+  <img
+    class="planet-div-line"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">Quick Overview of the User Interface:</h4>
+  <img
+          src="../images/Game_UI.png"
+          alt="Blog Page Tablet Wireframe"
+          class="wireframe-tab"
+          id="game-ov"
+        />
+  
+  <h4 class="sub-head-blog">Example Round:</h4>
+  <h4 class="sub-head-blog">
+    Solar Flare Data Gathered From The NASA API:
+  </h4>
+  <img
+          src="../images/api_stuff.png"
+          alt="Blog Page Tablet Wireframe"
+          class="wireframe-tab"
+          id="game-ui"
+        />
+  <p class="blog-txt">
+    The provided image displays the standard data elements that are
+    recorded for each solar flare that occurs during a specific period.
+    I have added an algorithm to run every round to select one out of
+    the 69 elements and display the beginTime and endTime, as well as
+    the class type for the respective solar flare.
+  </p>
+  <h4 class="sub-head-blog">Info For Astronauts:</h4>
+  <p class="blog-txt">
+    At 22:15, an astronaut will be conducting maintenance on a
+    satellite.
+  </p>
+  <h4 class="sub-head-blog">Info For Telecommunications:</h4>
+  <p class="blog-txt">All cell towers are up and running.</p>
+  <h4 class="sub-head-blog">Info For Air Traffic:</h4>
+  <p class="blog-txt">A flight is departing at 23:45.</p>
+  <h4 class="sub-head-blog">Info For Solar Flares:</h4>
+  <p class="blog-txt">
+    1. C-Class: These are small flares with weak effects on Earth,
+    typically not causing significant disturbances.
+  </p>
+  <p class="blog-txt">
+    2. M-Class: Moderate flares that can lead to radio signal
+    degradation and minor radiation storms.
+  </p>
+  <p class="blog-txt">
+    3. X-Class: The most powerful flares, capable of causing significant
+    radio signal degradation, radiation storms, and even satellite
+    communication disruptions.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">Info For Solar Flares:</h4>
+  <p class="blog-txt">
+    To analyse the displayed data and figure out who the Solar Flare
+    affects and who to notify before the timer runs out. In this
+    instance, only the astronauts are affected as the solar flare’s
+    class type is M1.1. The air traffic control is not affected as the
+    solar flare burst ends before the flight departs. Therefore, the
+    player will need to click on the astronaut button only.
+  </p>
+  <h4 class="sub-head-blog">The Source Location:</h4>
+  <p class="blog-txt">
+    S22E57. The S represents the South. The player will have to select
+    South and then submit to gain maximum points.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">My Thought Process:</h4>
+  <p class="blog-txt">
+    I had a significant concern regarding the repetitive nature of my
+    game. Originally, I envisioned the game lasting approximately 12
+    minutes, with each in-game hour taking up 30 seconds. The idea was
+    to create a sense of realism where players would experience a
+    job-like routine, waiting for solar flares to occur.
+  </p>
+  <p class="blog-txt">
+    However, I decided against this approach for several reasons.
+    Firstly, the core mechanics were overly repetitive, and I was
+    concerned that players might lose interest quickly. Additionally,
+    the overlap of certain solar flare bursts presented a challenge. To
+    address this issue, I attempted to create an algorithm that would
+    select only one of the two overlapping solar flares. While this
+    approach reduced redundancy, it also meant there would be fewer
+    solar flares throughout the 12-minute gameplay. As a result, players
+    would find themselves in a waiting period, merely watching a
+    countdown, which wasn't engaging.
+  </p>
+  <p class="blog-txt">
+    I ultimately decided to shift away from a purely realistic approach
+    and instead incorporated time as a key difficulty element in the
+    game. Given that the time and source location needed to remain
+    consistent for players to answer questions accurately, it became
+    apparent that a difficulty curve was necessary to keep the game
+    engaging.
+  </p>
+  <p class="blog-txt">
+    In this new approach, I introduced a time limit for each round,
+    which would progressively decrease with each subsequent round. This
+    time constraint added a layer of challenge and urgency to the game.
+    The concept behind this adjustment was to reflect the idea that a
+    more experienced player or individual would be quicker in completing
+    a given task, while a less experienced one might take slightly
+    longer; I preferred this more subtle realism approach instead of my
+    previous idea.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">Replayability:</h4>
+  <p class="blog-txt">
+    At the time of writing, my game’s user interface and timer are
+    complete and my code is sorting the data as planned and discussed
+    above; but there is no actual functionality implemented yet and this
+    is something I am concerned about. Initially, I asked to use the
+    three.js library but after careful consideration, I realized that I
+    was forcing a complex idea that had little chance of being
+    successful.
+  </p>
+  <p class="blog-txt">
+    Before I continue, I'd like to provide more detail about the
+    inspiration behind "The Impossible Quiz." This quiz is designed to
+    challenge players to think outside the box when answering questions.
+    It's important to emphasize that the quiz remains unchanged upon
+    restarting, and it often presents questions with multiple
+    technically correct answers. However, the player must select the
+    answer that the quiz designers have specified as correct.
+  </p>
+  <p class="blog-txt">
+    For instance, in question 7, all four answers are technically
+    correct, but the expected answer is "an elephant." In question 12,
+    players are expected to click on the smallest circle, and while this
+    isn't among the given options, the correct answer is the dot above
+    the letter 'i.' This game is intentionally designed to rely on
+    players making mistakes and failing, which is a fundamental part of
+    the gameplay.
+  </p>
+  <p class="blog-txt">
+    Now, while my game doesn't have real-life implications for
+    astronauts or flights, I aim to create an environment that simulates
+    such consequences. With this in mind, I initially considered
+    adopting "The Impossible Quiz" system. However, I had to reconsider
+    this approach because if players failed multiple times before
+    answering correctly, it might result in harm to the people they were
+    supposed to notify. Therefore, I couldn't base my game on this
+    system, as player mistakes should not lead to potentially severe
+    consequences in the context of your game.
+  </p>
+  <p class="blog-txt">
+    To ensure replayability in my game, I've implemented a system that
+    randomizes the answers and questions for every round or playthrough.
+    This approach sets my game apart from "The Impossible Quiz," where
+    the questions remain consistent.
+  </p>
+  <p class="blog-txt">
+    In my game, I've introduced a random check with three possible
+    scenarios:
+  </p>
+  <p class="blog-txt">
+    1. The astronauts, air traffic control, and/or telecommunications
+    have maintenance, flights, or other tasks happening simultaneously.
+  </p>
+  <p class="blog-txt">
+    2. The solar flare bursts occur before the above-mentioned tasks.
+  </p>
+  <p class="blog-txt">
+    3. The solar flare bursts happen after the above-mentioned tasks.
+  </p>
+  <p class="blog-txt">
+    This approach allows these tasks to act independently concerning the
+    game's timer mechanics. It also offers the advantage of dynamically
+    determining the difficulty curve through code, rather than having it
+    predefined by me. This way, each playthrough of the game offers a
+    unique challenge, enhancing replayability and keeping players
+    engaged.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">Reflection:</h4>
+  <p class="blog-txt">
+    My primary challenges for this assignment stemmed from my previous
+    coursework. Many of my data visualizations and interactive elements
+    were heavily influenced by the work we had covered in class. While
+    this provided a solid foundation, I recognized that I hadn't
+    explored D3.js to the extent that I should have.
+  </p>
+  <p class="blog-txt">
+    For this assignment, I set a personal objective to create something
+    entirely from scratch, rather than duplicating and modifying
+    existing work. This approach, while ambitious, proved to be more
+    time-consuming than I initially anticipated. I had to invest a
+    significant amount of time understanding the basic capabilities of
+    D3.js.
+  </p>
+  <p class="blog-txt">
+    This learning curve not only consumed time but also limited the
+    extent of what I could achieve, as I had to prioritize creating a
+    submission within the given timeframe. As a result, I couldn't delve
+    as deeply into certain aspects as I would have liked. Nevertheless,
+    this experience has provided a valuable foundation for future
+    exploration and development in D3.js.
+  </p>
+</section>
+`,
 ];
