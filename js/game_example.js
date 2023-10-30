@@ -130,39 +130,6 @@ let sLocation = example
   .classed("game-head", true)
   .attr("font-size", "1.6rem")
   .attr("fill", "white");
-
-/* ----------------------------------------------------------TIMER ELEMENTS-------------------------------------------------------------- */
-const timerTxt = example
-  .append("text")
-  .attr("id", "timer-txt")
-  .attr("x", 1350)
-  .attr("y", 100)
-  .text("00")
-  .classed("game-head", true)
-  .attr("font-size", "5rem")
-  .attr("fill", "white");
-
-let maxTime = 30;
-let time = maxTime;
-//let timerInterval = setInterval(Timer, 1000);
-
-function StartTimer() {}
-
-function StopTimer() {
-  clearInterval(timerInterval);
-}
-
-function Timer() {
-  if (time % 2) {
-    timerTxt.attr("fill", "red");
-  } else {
-    timerTxt.attr("fill", "white");
-  }
-
-  timerTxt.text(time);
-  time--;
-  console.log(time);
-}
 /* -----------------------------------------------------UI FOR THE LEFT HAND SIDE------------------------------------------------------- */
 /*---------------------Backgrounds----------------------*/
 example
@@ -445,33 +412,46 @@ flightScript = ["Departure @", "Landing @"];
 telecomScript = ["Systems active @", "Maintenance @"];
 
 /* -----------------------------------------------------SUBMIT BUTTON------------------------------------------------------- */
-let submitBtn = example
-  .append("rect")
-  .attr("x", 1250)
-  .attr("y", 650)
-  .attr("width", 200)
-  .attr("height", 60)
-  .attr("rx", 0)
-  .attr("ry", 0)
-  .style("fill", "white")
-  .attr("stroke", "grey")
-  .attr("stroke-width", 1)
-  .on("mouseover", () => {
-    submitBtn.style("fill", "black").style("cursor", "pointer");
-    submitHeading.style("fill", "white");
-  })
-  .on("mouseout", () => {
-    submitBtn.style("fill", "white").style("cursor", "pointer");
-    submitHeading.style("fill", "black");
-  })
-  .on("click", () => {});
+// let submitBtn = example
+//   .append("rect")
+//   .attr("x", 1250)
+//   .attr("y", 650)
+//   .attr("width", 200)
+//   .attr("height", 60)
+//   .classed("submit-btn", true)
+//   .attr("rx", 0)
+//   .attr("ry", 0)
+//   .style("fill", "white")
+//   .attr("stroke", "grey")
+//   .attr("stroke-width", 1)
+//   .on("mouseover", () => {
+//     submitBtn.style("fill", "black").style("cursor", "pointer");
+//     submitHeading.style("fill", "white");
+//   })
+//   .on("mouseout", () => {
+//     submitBtn.style("fill", "white").style("cursor", "pointer");
+//     submitHeading.style("fill", "black");
+//   })
+//   .on("click", () => {
+//     console.log("working");
+//     Submit(astroBtn, astroText);
+//     Submit(flightBtn, flightText);
+//     Submit(teleBtn, telecomText);
+//   });
+// let submitHeading = example
+//   .append("text")
+//   .attr("id", "timer-txt")
+//   .attr("x", 1320)
+//   .attr("y", 690)
+//   .text("SUBMIT")
+//   .classed("game-head", true)
+//   .attr("font-size", "1.2rem")
+//   .attr("fill", "black");
 
-let submitHeading = example
-  .append("text")
-  .attr("id", "timer-txt")
-  .attr("x", 1320)
-  .attr("y", 690)
-  .text("SUBMIT")
-  .classed("game-head", true)
-  .attr("font-size", "1.2rem")
-  .attr("fill", "black");
+// function Submit(btn, text) {
+//   if (btn.style("fill") === "green" && text.classed("corr")) {
+//     console.log("+1");
+//   } else if (btn.style("fill") === "green" && !text.classed("corr")) {
+//     console.log("-1");
+//   }
+// }
