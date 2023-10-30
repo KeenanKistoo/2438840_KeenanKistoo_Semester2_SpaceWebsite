@@ -551,6 +551,10 @@ section#game-elements {
   padding-bottom: 2rem;
 }
 
+.move {
+  margin-left: -10000rem;
+}
+
 #game-ui {
   width: 40rem;
 }

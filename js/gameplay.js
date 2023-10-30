@@ -108,33 +108,57 @@ d3.json(sfUrl).then((data) => {
   let time = maxTime;
   let value = 1000000;
   let timerInterval = setInterval(Timer, value);
-  let gameSection = d3.select("#game-elements");
 
-  let startBtn = gameSection
+  function StartInt() {
+    clearInterval(timerInterval);
+
+    timerInterval = setInterval(Timer, 1000);
+  }
+
+  let startBtn = example
     .append("rect")
-    .attr("x", 1250)
-    .attr("y", 650)
-    .attr("width", 200)
-    .attr("height", 60)
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", 1500)
+    .attr("height", 760)
     .classed("submit-btn", true)
     .attr("rx", 0)
     .attr("ry", 0)
-    .style("fill", "white")
+    .style("fill", "black")
     .attr("stroke", "grey")
-    .attr("stroke-width", 1)
-    .on("mouseover", () => {
-      startBtn.style("fill", "black").style("cursor", "pointer");
-      submitHeading.style("fill", "white");
-    });
-  let submitHeading = gameSection
+    .attr("stroke-width", 1);
+  let submitHeading = example
     .append("text")
     .attr("id", "timer-txt")
-    .attr("x", 1320)
-    .attr("y", 690)
+    .attr("x", 650)
+    .attr("y", 400)
     .text("Start Game")
     .classed("game-head", true)
-    .attr("font-size", "1.2rem")
-    .attr("fill", "white");
+    .classed("move", false)
+    .attr("font-size", "1.8rem")
+    .attr("fill", "white")
+    .on("mouseover", () => {
+      submitHeading
+        .attr("font-size", "4rem")
+        .attr("x", 550)
+        .attr("y", 400)
+        .style("cursor", "pointer");
+    })
+    .on("mouseout", () => {
+      submitHeading.attr("font-size", "1.8rem").attr("x", 650).attr("y", 400);
+    })
+    .on("click", () => {
+      //submitHeading.attr("x", 1000000);
+      startBtn.attr("x", 1000000);
+      value = 1000;
+      StartInt();
+      submitHeading.remove();
+      MoveX();
+    });
+
+  function MoveX() {
+    submitHeading.attr("x", -100000);
+  }
 
   function StartTimer() {
     let ranNum = Math.floor(Math.random() * 16);
