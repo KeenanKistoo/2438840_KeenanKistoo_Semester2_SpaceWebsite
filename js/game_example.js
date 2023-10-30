@@ -226,6 +226,7 @@ let astroBtn = example
   })
   .on("click", () => {
     ClassCheck(astroBtn);
+    noneBtn.classed("clicked", false).style("fill", "white");
   });
 let astroHeading = example
   .append("text")
@@ -253,6 +254,7 @@ let flightBtn = example
   })
   .on("click", () => {
     ClassCheck(flightBtn);
+    noneBtn.classed("clicked", false).style("fill", "white");
   });
 let flightHeading = example
   .append("text")
@@ -280,6 +282,7 @@ let teleBtn = example
   })
   .on("click", () => {
     ClassCheck(teleBtn);
+    noneBtn.classed("clicked", false).style("fill", "white");
   });
 let teleHeading = example
   .append("text")
@@ -307,6 +310,9 @@ let noneBtn = example
   })
   .on("click", () => {
     ClassCheck(noneBtn);
+    astroBtn.classed("clicked", false).style("fill", "white");
+    flightBtn.classed("clicked", false).style("fill", "white");
+    teleBtn.classed("clicked", false).style("fill", "white");
   });
 let noneHeading = example
   .append("text")
@@ -375,6 +381,7 @@ let northBtn = example
   })
   .on("click", () => {
     ClassCheck(northBtn);
+    southBtn.classed("clicked", false).style("fill", "white");
   });
 let northHeading = example
   .append("text")
@@ -402,6 +409,7 @@ let southBtn = example
   })
   .on("click", () => {
     ClassCheck(southBtn);
+    northBtn.classed("clicked", false).style("fill", "white");
   });
 let southHeading = example
   .append("text")
