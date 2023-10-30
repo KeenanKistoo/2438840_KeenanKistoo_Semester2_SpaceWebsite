@@ -443,3 +443,35 @@ astroScript = ["Maintenance @", "Earth Observation @", "Experiment @"];
 flightScript = ["Departure @", "Landing @"];
 
 telecomScript = ["Systems active @", "Maintenance @"];
+
+/* -----------------------------------------------------SUBMIT BUTTON------------------------------------------------------- */
+let submitBtn = example
+  .append("rect")
+  .attr("x", 1250)
+  .attr("y", 650)
+  .attr("width", 200)
+  .attr("height", 60)
+  .attr("rx", 0)
+  .attr("ry", 0)
+  .style("fill", "white")
+  .attr("stroke", "grey")
+  .attr("stroke-width", 1)
+  .on("mouseover", () => {
+    submitBtn.style("fill", "black").style("cursor", "pointer");
+    submitHeading.style("fill", "white");
+  })
+  .on("mouseout", () => {
+    submitBtn.style("fill", "white").style("cursor", "pointer");
+    submitHeading.style("fill", "black");
+  })
+  .on("click", () => {});
+
+let submitHeading = example
+  .append("text")
+  .attr("id", "timer-txt")
+  .attr("x", 1320)
+  .attr("y", 690)
+  .text("SUBMIT")
+  .classed("game-head", true)
+  .attr("font-size", "1.2rem")
+  .attr("fill", "black");
