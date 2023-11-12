@@ -25,6 +25,12 @@ let keplerBtn = document.querySelector("#kepler-btn");
 keplerBtn.addEventListener("click", () => {
   window.location.href = "html/kepler-field.html";
 });
+
+let dayBtn = document.querySelector("#day-btn-home");
+dayBtn.addEventListener("click", () => {
+  window.location.href = "html/day.html";
+});
+
 //Homepage Button Hover:
 let navBtns = document.querySelectorAll(".nav-btn");
 let tooltipHome = document.querySelector(".tooltip-home");

@@ -7,24 +7,30 @@ const homeTooltips = [
   },
   {
     id: 1,
+    heading: "Picture Of The Day",
+    tooltipText:
+      "Dive into the cosmos, where every day paints a new masterpiece in the Picture of the Day gallery.",
+  },
+  {
+    id: 2,
     heading: "Mini Game",
     tooltipText:
       "Survive the solar storm and lead your crew to safety amidst the Sun's raging fury!",
   },
   {
-    id: 2,
+    id: 3,
     heading: "Solar Flares",
     tooltipText:
       "Dive into the fascinating realm of solar flares as we embark on an exploration of these dynamic celestial phenomena.",
   },
   {
-    id: 3,
+    id: 4,
     heading: "Blog Section",
     tooltipText:
       "This section comprises of the blog posts that I have completed throughout Semester 2 (2023).",
   },
   {
-    id: 4,
+    id: 5,
     heading: "Design Section",
     tooltipText:
       "This section comprises of my design choices and intentions when creating this website.",

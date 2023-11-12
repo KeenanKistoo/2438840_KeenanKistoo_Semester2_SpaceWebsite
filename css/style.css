@@ -19,10 +19,10 @@ h1.main-head {
 
 section.nav-tabs {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(6, 16.5%);
   grid-template-rows: 1;
   height: 4rem;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 
@@ -113,12 +113,12 @@ h1.head-scroll {
   font-size: 3.2rem;
   text-align: center;
   margin-top: 1rem;
-  margin-left: 3.7rem;
+  margin-left: 0.5rem;
   transition: 0.3s;
 }
 section.nav-tabs-pages {
   display: grid;
-  grid-template-columns: repeat(6, 16.5%);
+  grid-template-columns: repeat(7, 13.5%);
   grid-template-rows: 1;
   height: 4rem;
   width: 90vw;
@@ -128,14 +128,50 @@ section.nav-tabs-pages {
   margin-right: 10rem;
   transition: 0.3s;
 }
+button#day-btn {
+  width: 12rem;
+  font-size: 1.2rem;
+  background-color: white;
+}
+button#day-btn:hover {
+  width: 12rem;
+  font-size: 1.2rem;
+  background-color: grey;
+  color: white;
+  border: black 1pt solid;
+}
+button#day-btn-active {
+  width: 12rem;
+  font-size: 1.2rem;
+  background-color: black;
+}
+button#day-btn-active:hover {
+  width: 12rem;
+  font-size: 1.2rem;
+  background-color: grey;
+  color: white;
+  border: black 1pt solid;
+}
+button#day-btn-home {
+  width: 15rem;
+  font-size: 1.4rem;
+  background-color: white;
+}
+button#day-btn-home:hover {
+  width: 15rem;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  border: white 2.5pt solid;
+}
 section.page-scroll {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1;
   grid-auto-rows: 4rem;
-  width: 70vw;
+  width: 80vw;
   margin-top: -7rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-bottom: -4rem;
   float: right;
   transition: 0.3s;
@@ -186,6 +222,12 @@ main.main-style {
 }
 
 button.active {
+  background-color: black;
+  color: white;
+  border: 0.2rem white solid;
+}
+
+.day-active {
   background-color: black;
   color: white;
   border: 0.2rem white solid;

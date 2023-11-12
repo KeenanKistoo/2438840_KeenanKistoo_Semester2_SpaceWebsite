@@ -2,6 +2,7 @@
 
 names = [
   "Blog Section",
+  "Picture Of The Day",
   "Mini Game",
   "Design Section",
   "Solar Flares",
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   </section>
   <section class="nav-tabs-pages">
     <button class="nav-btn-pages home-btn-pages"">Homepage</button>
+    <button class="nav-btn-pages" id="day-btn">Picture Of The Day</button>
     <button class="nav-btn-pages mars-btn-pages">Asteroids</button>
     <button class="nav-btn-pages pic-btn-pages">Mini Game</button>
     <button class="nav-btn-pages kepler-btn-pages">Solar Flares</button>
@@ -62,6 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
   design.addEventListener("click", () => {
     window.location.href = designUrl;
   });
+
+  let dayBtn = document.querySelector("#day-btn");
+  dayBtn.addEventListener("click", () => {
+    window.location.href = "../html/day.html";
+  });
+
   let navBtns = document.querySelectorAll(".nav-btn-pages");
   navBtns.forEach((btn) => {
     btn.addEventListener("mouseover", () => {
@@ -79,10 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   let mainHead = document.querySelector("h1");
   let navBtnsCheck = document.querySelectorAll(".nav-btn-pages");
+  let dayBtn = document.querySelector("#day-btn");
 
   for (i = 0; i < navBtnsCheck.length; i++) {
     if (mainHead.innerText === navBtnsCheck[i].innerHTML) {
       navBtnsCheck[i].classList.add("active");
+    }
+
+    if (mainHead.innerText === "Picture Of The Day") {
+      dayBtn.id = "day-btn-active";
     }
   }
 });
