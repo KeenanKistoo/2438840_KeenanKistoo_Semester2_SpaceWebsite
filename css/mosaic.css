@@ -1,23 +1,8 @@
-#mosaic svg {
-  display: grid;
-  grid-template-columns: repeat(7, 14.2%);
-}
 /*-------------------------------------------------MOSAIC TILE STUFF----------------------------------------------------------*/
-/*.mosaic-tile {
-  height: 10rem;
-  width: 7.5rem;
-}
+/* #mos-0.mosaic-tile {
+} */
 
-#mos-0.mosaic-tile {
-  height: 10rem;
-  width: 7.5rem;
-}
-
-#mos-1.mosaic-tile {
-  height: 15rem;
-  width: 11rem;
-}
-
+/*
 #mos-2.mosaic-tile {
   height: 10rem;
   width: 7.5rem;
@@ -221,7 +206,7 @@
 #mos-42.mosaic-tile {
   height: 10rem;
   width: 7.5rem;
-}
+} */
 */
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
