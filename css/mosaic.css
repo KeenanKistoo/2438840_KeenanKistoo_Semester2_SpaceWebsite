@@ -1,0 +1,230 @@
+#mosaic svg {
+  display: grid;
+  grid-template-columns: repeat(7, 14.2%);
+}
+/*-------------------------------------------------MOSAIC TILE STUFF----------------------------------------------------------*/
+/*.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-0.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-1.mosaic-tile {
+  height: 15rem;
+  width: 11rem;
+}
+
+#mos-2.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-3.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-4.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-5.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-6.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-7.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-8.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-9.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-10.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-11.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-12.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-13.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-14.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-15.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-16.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-17.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-18.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-19.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-20.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-21.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-22.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-23.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-24.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-25.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-26.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-27.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-28.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-29.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-30.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-31.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-32.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-33.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-34.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-35.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-36.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-37.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-38.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-39.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-40.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-41.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+
+#mos-42.mosaic-tile {
+  height: 10rem;
+  width: 7.5rem;
+}
+*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+.mosaic-tile:hover {
+  cursor: pointer;
+}
