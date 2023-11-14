@@ -110,6 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let divLine = document.querySelector(".divider-line");
 
     mainHead.classList.toggle("head-scroll", window.scrollY > 0);
+    if (mainHead.innerHTML === "Picture Of The Day") {
+      if (window.scrollY > 0) {
+        mainHead.style.fontSize = "2.4rem";
+      } else {
+        mainHead.style.fontSize = "4rem";
+      }
+    }
     navTabScroll.classList.toggle("page-scroll", window.scrollY > 0);
     divLine.classList.toggle("div-scroll", window.scrollY > 0);
     navBtnScroll.forEach((btn) => {

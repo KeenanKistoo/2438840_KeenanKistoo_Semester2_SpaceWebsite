@@ -116,6 +116,7 @@ h1.head-scroll {
   margin-left: 0.5rem;
   transition: 0.3s;
 }
+
 section.nav-tabs-pages {
   display: grid;
   grid-template-columns: repeat(7, 13.5%);
