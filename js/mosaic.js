@@ -14,6 +14,46 @@ let svg = d3
   .append("g")
   .attr("transform", `translate(${MARGIN.left}, ${MARGIN.top})`)
   .style("padding-bottom", "-20rem");
+//Creating Tooltip:
+let tooltip = d3
+  .select("#tooltip-day")
+  .append("section")
+  .style("opacity", 0)
+  .style("width", "200px")
+  .style("height", "20px")
+  .style("border-radius", "5px")
+  .style("padding", "2rem")
+  .style("background-color", "#000")
+  .style("color", "#fff")
+  .style("position", "relative")
+  .style("font-family", "'Manrope', sans-serif")
+  .style("font-size", "0.9rem")
+  .style("text-align", "center");
+// Create a div for the text content
+let textContainer = tooltip
+  .append("div")
+  .style("margin-top", "-22px")
+  .style("margin-left", "-5px")
+  .style("margin-right", "-5px");
+
+function showTooltip(name) {
+  tooltip.style("opacity", 1).style("height", "5px").style("z-index", 1000);
+
+  // Add the text to the div
+  textContainer.html(name + "<br>Click For More Info!");
+}
+
+function hideTooltip() {
+  tooltip.style("opacity", 0).style("z-index", 1000);
+  textContainer.html("");
+  //console.log(tooltip.style("opacity"));
+}
+
+function moveTooltip() {
+  tooltip
+    .style("left", d3.pointer(event)[0] + 250 + "px")
+    .style("top", d3.pointer(event)[1] - 875 + "px");
+}
 
 d3.json(apodUrl).then((data) => {
   console.log(data);
@@ -44,30 +84,34 @@ d3.json(apodUrl).then((data) => {
       .attr("xlink:href", d.url)
       .attr("preserveAspectRatio", "xMidYMid slice");
 
-    // Mouseover event
     tile.on("mouseover", function () {
-      // Set opacity of all tiles (excluding the hovered tile) to 0.75
       svg
         .selectAll(".mosaic-tile")
         .filter(":not(:hover)")
         .style("opacity", 0.75);
-      // Increase size of the hovered tile by 20%
       d3.select(this)
         .attr("width", tileSize * 1.4)
         .attr("height", tileSize * 1.4);
-      // Bring the hovered tile to the front
+
       d3.select(this).raise();
+      const hoveredId = d3.select(this).attr("id").slice(-1);
+      const name = data[hoveredId].title;
+      console.log(name);
+      showTooltip(name);
     });
 
-    // Mouseout event
     tile.on("mouseout", function () {
-      // Reset opacity of all tiles to 1
       svg.selectAll(".mosaic-tile").style("opacity", 1);
-      // Reset size of the hovered tile
-      d3.select(this).attr("width", tileSize).attr("height", tileSize);
-    });
-  });
 
-  d3.select("#mos-45").attr("x", 645).attr("y", 516);
-  d3.select("#mos-46").attr("y", 387);
+      d3.select(this).attr("width", tileSize).attr("height", tileSize);
+      hideTooltip();
+    });
+
+    tile.on("mousemove", () => {
+      moveTooltip();
+    });
+
+    d3.select("#mos-45").attr("x", 645).attr("y", 516);
+    d3.select("#mos-46").attr("y", 387);
+  });
 });
