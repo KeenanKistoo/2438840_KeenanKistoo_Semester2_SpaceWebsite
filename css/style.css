@@ -607,18 +607,7 @@ section#game-elements {
 #blog-three {
   padding-top: 30rem;
 }
-#mosaic svg {
-  display: grid;
-  grid-template-columns: repeat(7, 14.2%);
-}
 
-#mos-0.mosaic-tile {
-  height: 10rem;
-  width: 7.5rem;
-}
-.mosaic-tile:hover {
-  cursor: pointer;
-}
 @media (min-width: 900px) {
   button.nav-btn-pages {
     width: 8rem;
