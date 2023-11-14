@@ -76,6 +76,12 @@ function UpdateInfo(data) {
   dayPic.src = data[idNum].url;
   dayPic.alt = "Picture of the day " + data[idNum].date;
   dayDesc.innerHTML = data[idNum].explanation;
+  // Scroll to the #all-info section with an offset of 10 pixels
+  const offset = 120;
+  const targetElement = document.getElementById("all-info");
+  const targetOffset = targetElement.offsetTop - offset;
+
+  window.scrollTo({ top: targetOffset, behavior: "smooth" });
 }
 
 d3.json(apodUrl).then((data) => {
@@ -117,7 +123,10 @@ d3.json(apodUrl).then((data) => {
         .attr("height", tileSize * 1.4);
 
       d3.select(this).raise();
-      const hoveredId = d3.select(this).attr("id").slice(-1);
+      let hoveredId = d3.select(this).attr("id").slice(-2);
+      if (hoveredId <= 0) {
+        hoveredId *= -1;
+      }
       idNum = hoveredId;
       const name = data[hoveredId].title;
       console.log(idNum);

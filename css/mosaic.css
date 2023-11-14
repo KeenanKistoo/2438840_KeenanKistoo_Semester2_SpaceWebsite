@@ -9,6 +9,12 @@
   align-items: center;
   margin-left: 5rem;
 }
+.day-main {
+  font-family: "Manrope", sans-serif;
+  display: block;
+  align-items: center;
+  margin-left: 42rem;
+}
 
 .tooltip-text {
   color: red;
