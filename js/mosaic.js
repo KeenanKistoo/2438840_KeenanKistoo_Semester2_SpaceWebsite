@@ -55,6 +55,29 @@ function moveTooltip() {
     .style("top", d3.pointer(event)[1] - 875 + "px");
 }
 
+let idNum = 0;
+let mainHead = document.querySelector("#heading-day");
+let mainTitle = document.querySelector("#title-day");
+let dayPic = document.querySelector("#day-pic");
+let dayDesc = document.querySelector("#desc-pic");
+
+function SetData() {
+  mainHead.innerHTML = "";
+  mainTitle.innerHTML = "";
+  dayPic.src = "";
+  dayPic.alt = "";
+  dayDesc.innerHTML = "";
+}
+
+SetData();
+function UpdateInfo(data) {
+  mainHead.innerHTML = "More Info On:";
+  mainTitle.innerHTML = data[idNum].title;
+  dayPic.src = data[idNum].url;
+  dayPic.alt = "Picture of the day " + data[idNum].date;
+  dayDesc.innerHTML = data[idNum].explanation;
+}
+
 d3.json(apodUrl).then((data) => {
   console.log(data);
   const numColumns = 9;
@@ -95,8 +118,9 @@ d3.json(apodUrl).then((data) => {
 
       d3.select(this).raise();
       const hoveredId = d3.select(this).attr("id").slice(-1);
+      idNum = hoveredId;
       const name = data[hoveredId].title;
-      console.log(name);
+      console.log(idNum);
       showTooltip(name);
     });
 
@@ -109,6 +133,10 @@ d3.json(apodUrl).then((data) => {
 
     tile.on("mousemove", () => {
       moveTooltip();
+    });
+
+    tile.on("click", () => {
+      UpdateInfo(data);
     });
 
     d3.select("#mos-45").attr("x", 645).attr("y", 516);
