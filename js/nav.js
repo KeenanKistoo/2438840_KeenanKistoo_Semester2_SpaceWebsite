@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mainHead.innerHTML === "Picture Of The Day") {
       if (window.scrollY > 0) {
         mainHead.style.fontSize = "2.4rem";
+        d3.select(".page-scroll").style("margin-top", "-5.5rem");
       } else {
         mainHead.style.fontSize = "4rem";
       }
