@@ -303,13 +303,12 @@ section.hide-blog {
 }
 section.blog-visual {
   display: grid;
-  height: 30rem;
-  border: 0.1rem black solid;
-  margin-top: 2rem;
+  height: 34rem;
+  margin-top: -1.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 95vw;
-  grid-template-columns: 25% 75%;
+  width: 75vw;
+  grid-template-columns: 100%;
   grid-template-rows: 100%;
   justify-content: center;
   align-items: first baseline;
@@ -479,7 +478,17 @@ a.foot-links {
   display: grid;
   grid-template-columns: repeat(3, 30%);
 }
-
+#blog-btn-five {
+  height: 4.2rem;
+}
+#gr-one {
+  height: 22rem;
+  width: 55rem;
+}
+#gr-two {
+  height: 22rem;
+  width: 55rem;
+}
 .ctrl-btns {
   height: 2.7rem;
   width: 8rem;
@@ -609,8 +618,6 @@ section#game-elements {
   padding-top: 30rem;
 }
 
-/* Existing code */
-
 @media (max-width: 900px) {
   h1.head-scroll {
     font-size: 2rem;
@@ -621,19 +628,19 @@ section#game-elements {
     grid-template-columns: repeat(4, 1fr);
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 0; /* Adjusted margin-top */
+    margin-top: 0;
   }
 
   .page-scroll button.nav-btn-pages {
     width: 100%;
     font-size: 1rem;
-    margin-top: 1rem; /* Adjusted margin-top */
+    margin-top: 1rem;
   }
 
   button.btn-scroll {
     font-size: 1rem;
     width: 100%;
-    margin-top: 0.5rem; /* Adjusted margin-top */
+    margin-top: 0.5rem;
   }
 
   p.blog-text {
@@ -652,19 +659,19 @@ section#game-elements {
     grid-template-columns: 1fr;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 0; /* Adjusted margin-top */
+    margin-top: 0;
   }
 
   .page-scroll button.nav-btn-pages {
     width: 100%;
     font-size: 1rem;
-    margin-top: 1rem; /* Adjusted margin-top */
+    margin-top: 1rem;
   }
 
   button.btn-scroll {
     font-size: 1rem;
     width: 100%;
-    margin-top: 0.5rem; /* Adjusted margin-top */
+    margin-top: 0.5rem;
   }
 
   p.blog-text {

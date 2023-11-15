@@ -28,6 +28,12 @@ blogBtnFour.addEventListener("click", () => {
   index = 3;
   MoveWindow();
 });
+let blogBtnFive = document.querySelector("#blog-btn-five");
+blogBtnFive.addEventListener("click", () => {
+  blogSection.innerHTML = blogCode[4];
+  index = 4;
+  MoveWindow();
+});
 
 function FirstBlogPost() {
   blogSection.innerHTML = blogCode[0];

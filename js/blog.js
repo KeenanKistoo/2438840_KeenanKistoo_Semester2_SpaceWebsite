@@ -662,4 +662,323 @@ blogCode = [
   </p>
 </section>
 `,
+  `
+<section class="blog-post">
+  <h3 class="blog-post-head">
+    Blog Post #05 - Data Visualisation, Art, and Representation
+  </h3>
+  <h4 class="sub-head-blog">Introduction</h4>
+  <p class="blog-txt">
+    Data art and data visualisations play a crucial role in enhancing
+    information accessibility, bridging the gap between the technically
+    readable yet complex nature of raw data and its effective
+    communication to a broader audience. As data is commonly stored in
+    various formats such as tables, APIs, CSV files, and databases, the
+    challenge lies in transforming this raw data into visually compelling
+    and comprehensible representations. This not only facilitates
+    communication but also enriches the interpretation process.
+  </p>
+  <p class="blog-txt">
+    Firstly, delving into the “meaning-making process” when examining data
+    visualisations and data art, we consider the raw form of data (Kidd,
+    2015: 21). Here, the choice of medium for representing data becomes
+    pivotal in shaping the audience's understanding. Concrete examples
+    will be explored to illustrate the impact of the medium on the
+    interpretation of data.
+  </p>
+  <p class="blog-txt">
+    Following this exploration, we will define and deconstruct the
+    concepts of data visualisation and data art, examining their unique
+    characteristics and roles in the representation of information. The
+    subsequent discussion will focus on the relationship between these two
+    fields, exploring intersections, similarities, and differences.
+    Understanding these distinctions is fundamental to appreciating how
+    data visualisation and data art contribute to enhancing the
+    representation of the underlying data.
+  </p>
+  <p class="blog-txt">
+    Finally, we will delve into the strategies and ethics of data
+    representation, engaging in a debate on how these strategies convey
+    information and meaning. This section aims to provide insights into
+    the considerations and implications of the choices made in presenting
+    data visually. By dissecting these aspects, we aim to uncover the
+    nuanced ways in which data is not only communicated but also perceived
+    and understood by the audience.
+  </p>
+  <img
+    class="planet-div-line"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">
+    The “meaning-making process” (Kidd, 2015: 21):
+  </h4>
+  <p class="blog-txt">
+    “There is no real connection between how a word sounds or how it looks
+    on a page and the thing it describes” (Kidd, 2015: 21).
+  </p>
+  <p class="blog-txt">
+    In the absence of accurate and well-presented data visualisations or
+    data art, interpreting raw data can be challenging. While it allows us
+    to discern what the data is saying, the full extent of its message may
+    remain elusive, particularly for those not familiar with the dataset.
+    Only individuals experienced in working with the specific dataset may
+    grasp its nuances and complexities, emphasizing the inherent
+    complexity that raw data presents in its unprocessed form. The
+    important factors to note are how data is represented and the
+    relationship between the different elements within the same data set.
+  </p>
+  <h4 class="sub-head-blog">
+    Example 1 – Bar Graph With No Labels (Please Note I have just created
+    these bar graphs using Microsoft Excel for explanation purposes):
+  </h4>
+  <img
+    src="../images/Screenshot 2023-11-15 103806.png"
+    alt="Blog Page Tablet Wireframe"
+    class="wireframe-tab"
+    id="gr-one"
+  />
+  <h4 class="sub-head-blog">
+    Example 2 – Bar Graph With Labels (Please Note I have just created
+    these bar graphs using Microsoft Excel for explanation purposes):
+  </h4>
+  <img
+    src="../images/Screenshot 2023-11-15 103624.png"
+    alt="Blog Page Tablet Wireframe"
+    class="wireframe-tab"
+    id="gr-two"
+  />
+  <p class="blog-txt">
+    Consider Example 1, where two bar graphs represent the incomes of two
+    companies over five years. Initially, Company A appears to have rapid
+    growth between the first two and last two bars, with less difference
+    between the third and fourth bars. However, without labels, the
+    interpretation is incomplete. In Example 2, with labels, we draw
+    different and more accurate conclusions. Notably, Company A is
+    significantly smaller than Company B, especially considering their
+    initial income. The deceptive intervals of Company A’s graph (in
+    intervals of 5) compared to Company B's (intervals of 20) highlight
+    the importance of accurate data representation.
+  </p>
+  <p class="blog-txt">
+    To emphasize, employees may not need labels, being familiar with their
+    company’s income range and size, while potential shareholders would
+    require labels for informed decisions. This example, even if it is
+    rudimentary, underscores the notion that “we use what we are given” to
+    create meanings and ideas about presented information (Kidd, 2015:
+    20). Misleading presentations can hinder our ability to make accurate
+    and informed decisions.
+  </p>
+  <h4 class="sub-head-blog">What Is Data Visualisation:</h4>
+  <p class="blog-txt">
+    Up until this point, I have provided a brief overview of the
+    importance of data visualisations; however, I have not explicitly
+    discussed what it is. Data visualisation is a "computer-generated"
+    illustration represented in a specific medium to convey certain
+    information using different elements in collaboration with text (Li,
+    2020: 18). The overarching objective of data visualisation is to
+    display necessary data in ways that are easier to comprehend. Examples
+    of data visualisations include but are not limited to, "tables,
+    charts, trees, maps, scatter-plots, diagrams, and graphs" (Li, 2020:
+    22).
+  </p>
+  <p class="blog-txt">
+    Data visualisation not only aids in understanding the dataset but also
+    helps construct meaning, plays a fundamental role in decision-making,
+    monitors data, and allows users and developers to identify and analyse
+    patterns and trends in the dataset. The general characteristics of
+    data visualisation are clear "communication," relevance and accuracy,
+    and interactivity (Li, 2020: 22).
+  </p>
+  <p class="blog-txt">
+    As demonstrated in the example above, there needs to be clear
+    communication between the data visualisation and the user. Considering
+    the digital format that these data visualisations take, the developer
+    is not always at hand to explicitly state what certain items are or to
+    clarify any confusion. Every element necessary to understand the
+    visualized data needs to be available in one space. Secondly,
+    relevance and accuracy are crucial. Data visualisations should be
+    relevant to the theme that the developer is trying to convey, and the
+    data should not be skewed or manipulated to sway the user's decision
+    in an unethical manner. Finally, what separates analogue charts,
+    graphs, etc., from their digital counterparts is the affordance of
+    interactivity. This allows for even more engagement for users to
+    effectively understand the dataset.
+  </p>
+  <h4 class="sub-head-blog">What Is Data Art:</h4>
+  <p class="blog-txt">
+    Data art is a broader concept as it has certain characteristics of
+    data visualisation, but to some extent, there is a slight focus on
+    aesthetics, narrative, and visual art fundamentals. Viégas and
+    Wattenberg describe "artistic visualisation" as the use of aesthetics
+    to illustrate data effectively (Viégas & Wattenberg, 2007:3). The
+    important elements of their discussion are the focus should be on the
+    data and not on how it is being represented. Also, the idea that is
+    being discussed is about subjective beauty. Data art should not be
+    disregarded from the category if it does not fall under the
+    conventional understanding of the beauty of images, video games, and
+    so on.
+  </p>
+  <h4 class="sub-head-blog">Data Visualisation Vs. Data Art:</h4>
+  <p class="blog-txt">
+    I would first like to draw on the similarities of the two data
+    representations. Both data representations have the same goal: to
+    display a data set in a digital and visual format to make it easier to
+    comprehend the data. Communication is a key aspect of both as they are
+    attempting to convey the data set to the user in a different way, for
+    example, a graph and a video game. Data visualisation and data art
+    prioritize the concept of being visually pleasing. The underlying idea
+    is to present information in a way that is not only informative but
+    also aesthetically appealing, recognizing that a visually attractive
+    presentation enhances engagement and comprehension. This allows the
+    users to comprehend the data without being bombarded with constant
+    text and elements (or parameters in APIs and CSV files). Finally,
+    there are storytelling elements in both data art and data
+    visualisation.
+  </p>
+  <p class="blog-txt">
+    Secondly, the differences: as Few discusses in a blog post on data
+    visualisation vs. data art, in data art, there is a focus on
+    “aesthetics and entertainment” whereas data visualisation’s core
+    objective is to display data effectively while the aesthetic aspect is
+    a secondary objective to enhance the visualisation (Few, 2012). To
+    some extent, I disagree with this statement. I do think that there is
+    a focus on entertainment when designing video games, animations, and
+    other digital artworks but the learning and comprehension is up to the
+    audience; in relation to this, people tend to understand better in
+    more comfortable environments which these entertaining elements can
+    create. Also, depending on the brief or goals set, there is more
+    creative freedom with data art in comparison to data visualisations.
+    Data visualisation types like graphs and scatter plots are used to
+    show progress and development which are more formal ideas and where
+    this can be manipulated to fit a game, the need to be more accurate
+    and explicit is far greater as there are often greater consequences.
+  </p>
+  <p class="blog-txt">
+    For example, suppose something is skipped mistakenly in a game. In
+    that case, a vast majority of players may not notice until it is
+    pointed out to them whereas, if certain statistics are omitted from
+    documents, there may be legal consequences. But again, it is dependent
+    on intent. As a developer, we are expected to be honest and thorough
+    when completing tasks but we cannot deny that mistakes may happen, and
+    as a user, we expect to trust the developers who have created the
+    work.
+  </p>
+  <p class="blog-txt">
+    Finally, data art has a focus on artistic expression, whereas data
+    visualisations focus on analyses to support and either confirm or
+    change decision-making processes.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">
+    Strategies and Ethics of Data Art and Data Visualisation:
+  </h4>
+  <h4 class="sub-head-blog">Strategies:</h4>
+  <p class="blog-txt">
+    In an article on Exploring Effective Data Visualisation Strategies in
+    Higher Education, Zentner, Covit, and Guevarra discuss the different
+    strategies tested in an experiment to identify potentially successful
+    components of data visualisation. These included the use of colour,
+    interactive dashboards, filters, and ranks whether all information
+    presented was necessary (Zentner, Covit & Guevarra, 2020). Even
+    though, I do think that these aspects were important, it was the face
+    value aspects that users will interact with rather than the ideas and
+    concepts that developers need to take into account when designing a
+    data visualisation. After going through the references, I have
+    selected Design Principles for Data Visualisation in Evaluation, as
+    Evergreen and Metzner break down the various strategies that they use
+    to design a data visualisation: “simplification, legend, data, colour,
+    weight, motion, text and arrows” (Evergreen & Metzner, 2013: 6-16).
+  </p>
+  <h4 class="sub-head-blog">Simplification</h4>
+  <p class="blog-txt">
+    The idea around this is to break down data and display it in its
+    simplest form to ensure that there is a clear meaning that the user
+    can identify (Evergreen & Metzner, 2013: 6).
+  </p>
+  <h4 class="sub-head-blog">Legend</h4>
+  <p class="blog-txt">
+    The visualization should be “close to or on the same page” as the
+    information it is intended to enhance. This ensures that the user
+    maintains concentration throughout their meaning-making and
+    understanding process without the “loss of any information” when
+    referring back to any information (Evergreen & Metzner, 2013: 8).
+  </p>
+  <h4 class="sub-head-blog">Data</h4>
+  <p class="blog-txt">
+    As a developer, it's crucial to comprehend the data and streamline it
+    to a level where users can readily grasp it with ease (Evergreen &
+    Metzner, 2013: 8). Adding information is always good but too much
+    information can lead to overwhelming the user or break their
+    concentration.
+  </p>
+  <h4 class="sub-head-blog">Colour</h4>
+  <p class="blog-txt">
+    The user should differentiate between important information and less
+    important information by their very distinctive colour choices. For
+    example, important information will be highlighted in red and less
+    important information will be in a light blue. The eye-catching red
+    colour will draw the user’s attention (Evergreen & Metzner, 2013: 11).
+  </p>
+  <h4 class="sub-head-blog">Weight</h4>
+  <p class="blog-txt">
+    Visual weight is just as important as “colour contrast” (Evergreen &
+    Metzner, 2013: 14). This means that more important elements are shown
+    larger.
+  </p>
+  <h4 class="sub-head-blog">Motion</h4>
+  <p class="blog-txt">
+    As explained above, motion and interactivity are affordances that can
+    be used effectively in an online space (Evergreen & Metzner, 2013:
+    15).
+  </p>
+  <h4 class="sub-head-blog">Text and Arrows</h4>
+  <p class="blog-txt">
+    Towards the end of the creation process, identify certain elements
+    that were previously considered redundant and find ways to incorporate
+    them. The authors emphasise that minimalistic design is important but
+    only if it does not affect the user’s understanding. All necessary
+    elements such as arrows, text, and so on, should be added if it
+    enhances the understanding for the user (Evergreen & Metzner, 2013:
+    15).
+  </p>
+  <h4 class="sub-head-blog">Ethics:</h4>
+  <p class="blog-txt">
+    In all forms of communication, both digital and analogue, intention
+    will always be a fundamental factor. If developers choose to
+    manipulate data for various reasons such as making a profit, defying,
+    or altering decisions, spreading propaganda, and so on, there needs to
+    be laws in place to ensure that this is limited and there are
+    consequences to it.
+  </p>
+  <img
+    class="planet-div-line"
+    id="blog-two"
+    src="../images/div-line-planets-new.jpg"
+    alt="Planets Divider Line"
+  />
+  <h4 class="sub-head-blog">Conclusion:</h4>
+  <p class="blog-txt">
+    The intricate interplay between data art and data visualisation serves
+    as a powerful means of transforming complex raw data into meaningful
+    and accessible information. The "meaning-making process" underscores
+    the significance of accurate representation, as illustrated by the
+    example of bar graphs. While both data visualisation and data art
+    share common goals of communication, aesthetics, and storytelling,
+    they differ in their emphasis on entertainment and artistic
+    expression. Strategic considerations, such as simplification, colour
+    choice, and interactivity, play a crucial role in effective data
+    representation, while ethical considerations are paramount to
+    maintaining trust and integrity in data communication. Navigating the
+    nuances of these concepts and implementing them successfully poses
+    challenges, highlighting the dynamic nature of data representation in
+    the ever-evolving landscape of information communication.
+  </p>
+</section>
+`,
 ];
