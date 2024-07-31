@@ -27,7 +27,7 @@ section.nav-tabs {
 }
 
 button.nav-btn {
-  width: 15rem;
+  width: 13rem;
   font-family: "Manrope", sans-serif;
   font-size: 1.5rem;
   font-weight: 550;
@@ -78,7 +78,7 @@ section.tooltip-home-show {
   display: block;
   text-align: center;
   width: 75.5vw;
-  height: 2.8rem;
+  height: 3.5rem;
   background-color: white;
   font-family: "Manrope", sans-serif;
   margin-left: 12.5rem;
@@ -110,7 +110,7 @@ h1.head-scroll {
   display: flex;
   color: black;
   font-family: "Manrope", sans-serif;
-  font-size: 3.2rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   margin-left: 0.5rem;
@@ -130,8 +130,8 @@ section.nav-tabs-pages {
   transition: 0.3s;
 }
 button#day-btn {
-  width: 12rem;
-  font-size: 1.2rem;
+  width: 10rem;
+  font-size: 1.1rem;
   background-color: white;
 }
 button#day-btn:hover {
@@ -142,8 +142,8 @@ button#day-btn:hover {
   border: black 1pt solid;
 }
 button#day-btn-active {
-  width: 12rem;
-  font-size: 1.2rem;
+  width: 10rem;
+  font-size: 1.1rem;
   background-color: black;
 }
 button#day-btn-active:hover {
@@ -154,13 +154,13 @@ button#day-btn-active:hover {
   border: black 1pt solid;
 }
 button#day-btn-home {
-  width: 15rem;
-  font-size: 1.4rem;
+  width: 13rem;
+  font-size: 1.2rem;
   background-color: white;
 }
 button#day-btn-home:hover {
-  width: 15rem;
-  font-size: 1.4rem;
+  width: 13rem;
+  font-size: 1.3rem;
   background-color: black;
   color: white;
   border: white 2.5pt solid;
@@ -178,7 +178,7 @@ section.page-scroll {
   transition: 0.3s;
 }
 button.nav-btn-pages {
-  width: 12rem;
+  width: 10rem;
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
   font-weight: 550;
@@ -187,9 +187,11 @@ button.nav-btn-pages {
   transition: 0.3s;
 }
 button.btn-scroll {
+  margin-top: 2rem;
+  height: 80%;
   width: 10rem;
   font-family: "Manrope", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 550;
   border-radius: 0;
   background-color: white;
@@ -225,7 +227,13 @@ main.main-style {
 button.active {
   background-color: black;
   color: white;
-  border: 0.2rem white solid;
+  border: 0.2rem white solid;width: 10rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 550;
+  border-radius: 0;
+  transition: 0.3s;
+  width: 10rem;
 }
 
 .day-active {
@@ -620,7 +628,7 @@ section#game-elements {
 
 @media (max-width: 900px) {
   h1.head-scroll {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
 
